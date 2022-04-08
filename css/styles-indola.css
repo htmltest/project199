@@ -1,0 +1,163 @@
+a {color:#3c476b}
+
+ul li::before {background:#3c476b}
+
+.wrapper tbody tr:first-child td {border-top-color:#3c476b}
+.wrapper tbody tr:last-child td {border-bottom-color:#3c476b}
+
+.btn {background:#e1e7fb; color:#3c476b}
+.btn:hover {color:#3c476b; background:rgba(225, 231, 251, 0.8)}
+.btn:disabled {background:#fafafa; color:#bfbfbf}
+
+form.loading::after {background-image:url(../images/loading-indola.svg) no-repeat center}
+
+.form-input input:hover {border-color:#3c476b}
+.form-input input:focus {border-color:#3c476b}
+.form-input input:disabled,
+.form-input textarea:disabled {border-color:#f7f7f7}
+.form-input input.error,
+.form-input textarea.error {border-color:#ff5d44}
+
+.form-checkbox label:hover span::before {border-color:#3c476b}
+.form-checkbox input.error+span::before,
+.form-checkbox input.error+label.error+span::before {border-color:#ff5d44}
+.form-checkbox input:checked+span::before,
+.form-checkbox input:checked+label.error+span::before {border-color:#3c476b; background-color:#3c476b}
+
+.form-radio label:hover span::before {border-color:#3c476b}
+.form-radio input.error+span::before,
+.form-radio input.error+label.error+span::before {border-color:#ff5d44}
+.form-radio input:checked+span::before,
+.form-radio input:checked+label.error+span::before {border-color:#3c476b}
+.form-radio input:checked+span::after,
+.form-radio input:checked+label.error+span::after {background:#3c476b}
+
+.pager a,
+.pager span {color:#3c476b}
+.pager a:hover {color:#3c476b}
+.pager a.pager-prev svg,
+.pager a.pager-next svg {stroke:#3c476b}
+.pager a.active {color:#3c476b; background:#e1e7fb; border-color:#e1e7fb}
+
+.logo-indola {float:left; margin:19px 0 0 42px}
+
+.header-auth .logo-indola {margin-left:420px}
+
+.header-bonus a:hover {color:#3c476b}
+.header-bonus a:hover svg {fill:#3c476b}
+
+.header-btns a:hover {background:#e1e7fb}
+.header-btns a:hover svg {fill:#3c476b}
+
+.header-user a:hover {color:#3c476b}
+.header-user a:hover svg {fill:#3c476b}
+
+.cabinet-menu ul {border-color:#bac4e6}
+.cabinet-menu ul li {border-color:#bac4e6}
+.cabinet-menu ul li a:hover {background:#e1e7fb}
+.cabinet-menu ul li.active a {color:#3c476b; background:#e1e7fb}
+.cabinet-menu ul li a:hover svg,
+.cabinet-menu ul li.active a svg {fill:#3c476b}
+
+.back-link a:hover {background:#3c476b}
+
+.profile-edit-link {background:#e1e7fb}
+.profile-edit-link:hover {background:#3c476b}
+.profile-edit-link svg {fill:#3c476b; transition:fill 0.2s}
+.profile-edit-link:hover svg {fill:#fff}
+
+.profile-cancel-link:hover {background:#3c476b}
+.profile-cancel-link svg {transition:fill 0.2s}
+.profile-cancel-link:hover svg {fill:#fff}
+
+.cart-row-count-ctrl a:hover svg {fill:#3c476b}
+.cart-row-remove a:hover svg {fill:#3c476b}
+
+.main-header-line-1 {margin-left:-184px; bottom:auto; top:0; width:400px; height:405px; background:url(../images/main-header-indola-bg.png)}
+.main-header-bg {margin-left:-39px}
+.main-header-auth:hover {background:#3c476b}
+.main-header-phone:hover {background:#3c476b}
+.main-header-indola {margin:38px 0 0 0}
+.main-header-indola img {display:block; width:314px}
+.main-header-title {margin:38px 0 0 0; font-size:90px; line-height:99px; font-weight:bold; letter-spacing:00; text-transform:none}
+.fonts-loaded .main-header-title {font-family:Montserrat, sans-serif}
+.main-header-title::before {display:none}
+.main-header-subtitle {margin:25px 0 0 0; font-size:24px; line-height:36px; letter-spacing:0; text-transform:none}
+.fonts-loaded .main-header-subtitle {font-family:Montserrat, sans-serif}
+
+.main-rules {margin:140px 0 0 0}
+.fonts-loaded .main-rules {font-family:Montserrat, sans-serif}
+.main-rules-steps {margin:60px auto 0 auto; width:1026px; border:2px solid #bdc5e6; padding:20px}
+.main-rules-steps::after {content:""; display:block; clear:both}
+.main-rules-step {float:left; width:calc(50% - 10px); height:400px; background:url(../images/main-rules-step.png); padding:0 0 0 45px}
+.main-rules-step+.main-rules-step {float:right}
+.main-rules-step-number {font-weight:bold; font-size:150px; line-height:225px}
+.main-rules-step-text {font-weight:500; font-size:36px; line-height:47px; margin:-9px 0 0 0}
+.main-rules-level {margin:116px 0 0 0; text-align:center; font-size:36px; line-height:47px; font-weight:500; position:relative}
+.main-rules-level::before {content:""; display:block; width:124px; height:214px; background:url(../images/main-rules-arrow-1.svg); position:absolute; left:50%; top:-236px; margin-left:-72px}
+.main-rules-bonus {margin:124px auto 0 auto; width:840px; text-align:center; padding:150px 0 40px 0; background:url(../images/main-rules-bonus.png); position:relative}
+.main-rules-bonus::before {content:""; display:block; width:182px; height:230px; background:url(../images/main-rules-arrow-2.svg); position:absolute; left:50%; top:-105px; margin-left:-111px}
+.main-rules-bonus-title {font-weight:bold; font-size:36px; line-height:47px}
+.main-rules-bonus-text {margin:8px 0 0 0; font-weight:500; font-size:24px; line-height:36px}
+.main-rules-bonus-notice {margin:10px 0 0 0; font-weight:500; font-size:16px; line-height:24px}
+.main-rules-link {margin:40px 0 0 0; text-align:center}
+.main-rules-link a {width:840px; background:#bdc5e6; font-weight:bold; color:#000}
+.fonts-loaded .main-rules-link a {font-family:Montserrat, sans-serif}
+.main-rules-link a:hover {background:rgba(225, 231, 251, 0.8)}
+
+.main-title {font-weight:bold; font-size:80px; line-height:88px; letter-spacing:0; text-transform:none; color:#000; text-shadow:none; text-align:center}
+.fonts-loaded .main-title {font-family:Montserrat, sans-serif}
+
+.main-faq {margin:140px 0 0 0}
+.fonts-loaded .main-faq {font-family:Montserrat, sans-serif}
+
+.faq-item-title {font-weight:bold; text-transform:none; letter-spacing:0}
+.faq-item-title:hover {color:#7d88b6}
+.faq-item.open .faq-item-title {color:#7d88b6}
+
+.main-catalogue {margin:140px 0 0 0}
+.fonts-loaded .main-catalogue {font-family:Montserrat, sans-serif}
+.main-catalogue-item-title {letter-spacing:0.15em}
+.main-catalogue-item-btn span {background:#bdc5e6}
+.main-catalogue-all a {font-weight:bold}
+.main-catalogue-all a:hover {background:#3c476b}
+
+.main-reg {margin:140px -9999px -153px -9999px; padding:61px 9999px 140px 9999px}
+.main-reg .main-title {line-height:104px; color:#000}
+.main-reg-form {margin:60px 0 0 0}
+.main-reg-row {margin:0 -10px}
+.main-reg-form .form-label {color:#000; font-weight:500}
+.fonts-loaded .main-reg-form .form-label {font-family:Montserrat, sans-serif}
+.main-reg-form .form-input input:hover {border-color:#3c476b}
+.main-reg-form .form-input input:focus {border-color:#3c476b}
+.main-reg-form .form-input input.error {border-color:#ff5d44}
+.main-reg-form .form-submit .btn {background:#bdc5e6; font-weight:500}
+.main-reg-form .form-submit .btn:hover {background:rgba(225, 231, 251, 0.8)}
+
+.bonus-info-level {color:#3c476b}
+.bonus-info-level-1 {background:#e1e7fb}
+.bonus-info-level-title span {background:#3c476b; color:#fff}
+.bonus-info-level-text a {color:#3c476b}
+
+.bonus-progress-line-current {background:#bac4e6}
+.bonus-progress-current-info-summ span {color:#3c476b; background:#e1e7fb}
+.bonus-progress-current-info-summ span::before {border-bottom-color:#e1e7fb}
+.bonus-progress-current-info-title {color:#3c476b}
+.bonus-progress-point {top:-4px; width:1px; background:#3c476b; margin-left:0}
+.bonus-progress-point-1 {left:50%}
+.bonus-progress-point.active .bonus-progress-point-info-title {color:#bac4e6}
+.bonus-progress-point.active .bonus-progress-point-info-summ span {background:#3c476b}
+.bonus-progress-point.active .bonus-progress-point-info-summ span::before {border-top-color:#3c476b}
+
+.bonus-history-radios .form-radio span::before {border-color:#000}
+.bonus-history-radios .form-radio input:checked+span::after,
+.bonus-history-radios .form-radio input:checked+label.error+span::after {background:#000}
+
+.order-delivery-item label input:checked+.order-delivery-item-inner::before {border-color:#3c476b}
+
+.orders-more a:hover {background:#3c476b}
+
+.back-link-auth a {background:#e1e7fb; transition:background 0.2s, color 0.2s; color:#3c476b}
+.back-link-auth a:hover {background:#3c476b; color:#fff}
+.back-link-auth a svg {fill:#3c476b; transition:fill 0.2s}
+.back-link-auth a:hover svg {fill:#fff}
