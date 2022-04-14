@@ -48,6 +48,11 @@ ol ol li::before {content:counter(point)'.'counter(subpoint); counter-increment:
 .btn:hover {text-decoration:none; color:#fff; background:#000}
 .btn:disabled {background:#fafafa; color:#bfbfbf; pointer-event:none; cursor:default}
 
+.btn-border {display:inline-block; vertical-align:top; margin:0; padding:13px 18px; overflow:visible; outline:none; text-decoration:none; background:#fff; color:#ff5d44; border:2px solid #ff5d44; border-radius:0; font:20px/30px Arial, Helvetica, sans-serif; letter-spacing:0.05em; text-transform:uppercase; text-align:center; position:relative; -webkit-appearance:none; cursor:pointer; transition:all 0.2s; box-sizing:border-box}
+.fonts-loaded .btn-border {font-family:Roboto, sans-serif}
+.btn-border:hover {text-decoration:none; color:#fff; background:#000; border-color:#000}
+.btn-border:disabled {background:#fafafa; color:#bfbfbf; pointer-event:none; cursor:default}
+
 form.loading {position:relative}
 form.loading::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(255, 255, 255, 0.3) url(../images/loading.svg) no-repeat center; z-index:1}
 
@@ -77,8 +82,10 @@ form.loading::after {content:""; display:block; position:absolute; left:0; top:0
 .fonts-loaded .form-input input,
 .fonts-loaded .form-input textarea {font-family:Roboto, sans-serif}
 .form-input textarea {height:auto; min-height:245px; resize:none; overflow:auto}
-.form-input input:hover {border-color:#ff5d44}
-.form-input input:focus {border-color:#ff5d44; border-width:2px; padding:14px 18px}
+.form-input input:hover,
+.form-input textarea:hover {border-color:#ff5d44}
+.form-input input:focus,
+.form-input textarea:focus {border-color:#ff5d44; border-width:2px; padding:14px 18px}
 .form-input input:disabled,
 .form-input textarea:disabled {background:#fafafa; border-color:#f7f7f7}
 .form-input input.error,
@@ -95,7 +102,7 @@ label.error {display:block; margin:2px 0 0 0; font-weight:500; font-size:14px; l
 .form-checkbox label {float:left; display:block; position:relative}
 .form-checkbox input {display:none}
 .form-checkbox span {display:block; position:relative; padding:0 0 0 25px; cursor:pointer}
-.form-checkbox span::before {content:""; display:block; width:20px; height:20px; border:1px solid #bfbfbf; position:absolute; left:0; top:2px; background:url(../images/checkbox.svg) no-repeat -999px -999px}
+.form-checkbox span::before {content:""; display:block; width:20px; height:20px; border:1px solid #bfbfbf; position:absolute; left:0; top:1px; background:url(../images/checkbox.svg) no-repeat -999px -999px}
 .form-checkbox label:hover span::before {border-color:#ff5d44}
 .form-checkbox input.error+span,
 .form-checkbox input.error+label.error+span {padding-bottom:26px}
@@ -124,6 +131,7 @@ label.error {display:block; margin:2px 0 0 0; font-weight:500; font-size:14px; l
 
 .form-ctrl {margin:40px 0 0 0; text-align:right; font-size:0; line-height:0; letter-spacing:-1px}
 .form-submit {display:inline-block; vertical-align:top}
+.form-reset {display:inline-block; vertical-align:top; margin:0 20px 0 0}
 
 .pager {margin:60px 0 0 -16px; font-size:0; line-height:0; letter-spacing:-1px}
 .pager a,
@@ -180,7 +188,7 @@ header {height:80px; background:#f7f7f7}
 .cabinet-menu ul li {margin:0; padding:0; border-top:1px solid #e2e2e2}
 .cabinet-menu ul li::before {display:none}
 .cabinet-menu ul li a {display:block; padding:20px 0; color:#000; text-decoration:none; transition:color 0.2s, background 0.2s}
-.cabinet-menu ul li a:hover {background:#f7f7f7}
+.cabinet-menu ul li a:hover {color:#ff5d44; background:#f7f7f7}
 .cabinet-menu ul li.active a {color:#ff5d44; background:#f7f7f7}
 .cabinet-menu ul li svg {display:inline-block; vertical-align:middle; margin:-2px 15px 0 15px; width:25px; height:25px; fill:#000; transition:fill 0.2s}
 .cabinet-menu ul li a:hover svg,
@@ -258,19 +266,22 @@ header {height:80px; background:#f7f7f7}
 
 .main-header {height:647px; position:relative}
 .main-header-line-1 {position:absolute; left:50%; margin-left:-188px; bottom:0; width:372px; height:75px; background:#ff5d44}
+.main-header-line-3 {position:absolute; left:50%; margin-left:-384px; bottom:0; width:568px; height:348px; background:#ff5d44}
 .main-header-bg {position:absolute; left:50%; top:0; right:0; bottom:0; margin-left:10px}
 .main-header-bg img {display:block; max-width:none; height:647px}
 .main-header-line-2 {position:absolute; left:50%; right:0; margin-left:361px; bottom:0; height:110px; background:#ff5d44}
+.main-header-line-4 {position:absolute; left:50%; right:0; margin-left:470px; bottom:0; height:75px; background:#ff5d44}
 .main-header .container {position:relative}
 .main-header-top {height:110px}
 .main-header-top::after {content:""; display:block; clear:both}
 .main-header-logo {float:left; margin:35px 0 0 0}
 .main-header-logo img {display:block; width:111px}
-.main-header-auth {float:right; width:221px; height:110px; background:#fff; color:#000; text-decoration:none; text-align:right; padding:0 35px 0 0; font-weight:500; font-size:20px; line-height:110px; letter-spacing:0.05em; text-transform:uppercase; transition:color 0.2s, background 0.2s}
+.main-header-auth {float:right; width:340px; height:110px; background:#fff; color:#000; text-decoration:none; text-align:right; padding:0 35px 0 0; font-weight:500; font-size:20px; line-height:110px; transition:color 0.2s, background 0.2s}
 .main-header-auth:hover {color:#fff; background:#ff5d44}
 .main-header-auth svg {display:inline-block; vertical-align:middle; margin:-2px 0 0 20px; width:42px; height:43px; fill:#000; transition:fill 0.2s}
 .main-header-auth:hover svg {fill:#fff}
-.main-header-phone {float:right; margin:0 20px 0 0; width:331px; height:110px; text-align:center; background:#000; color:#fff; font-size:24px; line-height:110px; font-weight:500; text-decoration:none; transition:background 0.2s}
+.main-header-auth span {display:inline-block; vertical-align:middle; max-width:218px; position:relative; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.main-header-phone {float:right; margin:0; width:230px; height:110px; text-align:center; background:#000; color:#fff; font-size:22px; line-height:110px; font-weight:500; text-decoration:none; transition:background 0.2s}
 .main-header-phone:hover {background:#ff5d44}
 .main-header-sf {margin:45px 0 0 0}
 .main-header-sf img {display:block; width:447px}
@@ -279,6 +290,8 @@ header {height:80px; background:#f7f7f7}
 .main-header-title::before {content:""; display:block; width:593px; height:179px; background:#fff; position:absolute; left:404px; top:-44px}
 .main-header-title span {position:relative}
 .main-header-subtitle {margin:95px 0 0 0; font-weight:bold; font-size:20px; line-height:30px; letter-spacing:0.05em; text-transform:uppercase}
+.main-header-title-rules {margin:175px 0 0 0; padding:0 0 127px 0; font-size:36px; line-height:47px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; position:relative}
+.fonts-loaded .main-header-title-rules {font-family:Oswald, sans-serif}
 
 .main-title {font-weight:500; font-size:100px; line-height:130px; letter-spacing:0.05em; text-transform:uppercase; color:#fff; text-shadow:2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000}
 .fonts-loaded .main-title {font-family:Oswald, sans-serif}
@@ -331,17 +344,26 @@ header {height:80px; background:#f7f7f7}
 .faq-item-content *:last-child {margin-bottom:0}
 
 .main-catalogue {margin:117px 0 0 0}
-.main-catalogue-list {margin:-20px auto 0 auto; width:950px; font-size:0; line-height:0; letter-spacing:-1px}
+.main-catalogue-list {margin:-20px auto 0 auto; width:950px; font-size:0; line-height:0; letter-spacing:-1px; position:relative}
+.main-catalogue-list-auth {width:780px; margin:20px auto 0 auto}
 .main-catalogue-item {display:inline-block; vertical-align:top; width:50%; padding:80px 40px 0 40px}
-.main-catalogue-item:nth-child(n+5) {display:none}
-.main-catalogue.open .main-catalogue-item:nth-child(n+5) {display:inline-block}
-.main-catalogue-item a {display:block; border:3px solid #000; background:#fff; height:500px; position:relative; text-align:center; text-decoration:none; color:#000; transition:box-shadow 0.2s, transform 0.2s}
-.main-catalogue-item a:hover {text-decoration:none; transform:translateY(-5px); box-shadow:0 0 5px rgba(0, 0, 0, 0.2)}
-.main-catalogue-item-title {margin:40px 30px 0 30px; height:72px; font-weight:bold; font-size:24px; line-height:36px; letter-spacing:0.05em; text-transform:uppercase}
+.main-catalogue-list-auth .main-catalogue-item {padding:20px 20px 0 20px}
+.main-catalogue-item:nth-child(n+5) {position:absolute; left:-99999px; top:-99999px}
+.main-catalogue.open .main-catalogue-item:nth-child(n+5) {position:relative; left:auto; top:auto}
+.main-catalogue-item-inner {border:3px solid #000; background:#fff; padding:40px 30px 30px 30px; position:relative; text-align:center}
+.main-catalogue-list-auth .main-catalogue-item-inner {border:1px solid #000; padding:20px; text-align:left}
+.main-catalogue-item-title {font-weight:bold; font-size:24px; line-height:36px; letter-spacing:0.05em; text-transform:uppercase}
+.main-catalogue-list-auth .main-catalogue-item-title {font-weight:500; font-size:20px; line-height:26px}
 .main-catalogue-item-preview {margin:10px 0 0 0; height:280px; line-height:280px}
+.main-catalogue-list-auth .main-catalogue-item-preview {height:230px; line-height:230px; text-align:center}
 .main-catalogue-item-preview img {display:inline-block; vertical-align:middle; max-height:280px}
+.main-catalogue-list-auth .main-catalogue-item-preview img {max-height:230px}
 .main-catalogue-item-btn {margin:10px 0 0 0}
+.main-catalogue-list-auth .main-catalogue-item-btn {margin:30px 0 0 0}
+.main-catalogue-list-auth .main-catalogue-item-btn::after {content:""; display:block; clear:both}
 .main-catalogue-item-btn span {display:inline-block; vertical-align:top; width:216px; height:62px; background:#ff5d44; color:#000; font-weight:bold; font-size:24px; line-height:62px; letter-spacing:0}
+.main-catalogue-list-auth .main-catalogue-item-btn span {float:left; width:auto; height:auto; background:none; font-weight:900; font-size:16px; line-height:24px; margin:15px 0 0 0}
+.main-catalogue-list-auth .main-catalogue-item-btn .btn {float:right; font-size:16px; line-height:24px; font-weight:500}
 .main-catalogue-all {margin:55px 0 0 0}
 .main-catalogue-all a {display:block; width:870px; margin:0 auto; height:60px; text-decoration:none; color:#000; background:#fafafa; font-weight:500; font-size:20px; line-height:60px; letter-spacing:0.05em; text-transform:uppercase; text-align:center; transition:background 0.2s, color 0.2s}
 .main-catalogue-all a:hover {color:#fff; background:#000}
@@ -512,17 +534,74 @@ header {height:80px; background:#f7f7f7}
 .back-link-auth a svg {display:inline-block; vertical-align:middle; width:26px; height:8px; fill:#fff; margin:-2px 10px 0 0}
 
 .auth {max-width:424px; margin:70px auto 0 auto}
-.auth h1 {text-align:center}
+.auth h1 {text-align:center; font-size:42px; line-height:55px; margin:0 -100px}
 .auth-form {margin:40px 0 0 0}
 .auth-form form {margin:0; padding:0}
+.auth-form .form-label {text-transform:none; letter-spacing:0; font-weight:normal; font-size:16px; line-height:21px}
 .auth-form .form-checkbox {margin:20px 0 0 0}
 .auth-btn {margin:40px 0 0 0; text-align:center}
 .auth-btn .btn {padding-left:45px; padding-right:45px}
-.auth-bottom {margin:60px auto 0 auto; text-align:center}
+.auth-bottom {margin:50px auto 0 auto; text-align:center}
 .auth-links {display:inline-block; vertical-align:top; font-weight:normal; line-height:23px}
 .auth-links span {margin:0 25px; color:#becee5}
 .auth-links a {text-decoration:none}
 .auth-links a:hover {text-decoration:underline}
+
+.forgot-text {font-size:18px; line-height:27px; font-weight:300; margin:25px -224px 35px -224px; text-align:center}
+
+.rules {margin:42px 0 0 0}
+.rules-item {margin:20px 0 0 0; background:#fafafa}
+.rules-item-title {display:block; position:relative; padding:24px 64px 24px 20px; text-decoration:none; color:#000; font-weight:500; font-size:20px; line-height:22px; transition:background 0.2s}
+.rules-item-title:hover {background:#d3d3d3}
+.rules-item-title svg {display:block; position:absolute; right:20px; top:24px; width:24px; height:24px; fill:none; stroke:#000; transition:transform 0.2s}
+.rules-item.open .rules-item-title svg {transform:rotate(-180deg)}
+.rules-item-content {display:none; padding:20px; border-top:1px solid #ff5d44}
+.rules-item-content li {margin:20px 0}
+.rules-item-content li::before {background:#3c476b}
+.rules-item-content li li::before {background:#ff5d44}
+.rules-item-content ul ul {margin:6px 0 20px 0}
+.rules-item-content *:first-child {margin-top:0}
+.rules-item-content *:last-child {margin-bottom:0}
+.rules-item-content li::before {border-radius:50%}
+.wrapper .rules-item-content table {margin:30px 0 10px 0}
+.wrapper .rules-item-content th {padding:0 15px 14px 15px; vertical-align:bottom; font-weight:500; font-size:12px; line-height:16px; text-transform:none; letter-spacing:0; color:#000; border-bottom:1px solid #ff5d44; text-align:left}
+.wrapper .rules-item-content th:first-child {padding-left:0}
+.wrapper .rules-item-content th:last-child {padding-right:0}
+.wrapper .rules-item-content td {padding:15px 15px 0 15px; font-weight:bold; font-size:14px; line-height:18px; text-transform:uppercase; border-top:none}
+.wrapper .rules-item-content td:first-child {padding-left:0; letter-spacing:0.05em}
+.wrapper .rules-item-content td:last-child {padding-right:0}
+.wrapper .rules-item-content tbody tr:first-child td {border-top:none}
+.wrapper .rules-item-content tbody tr:last-child td {border-bottom:none}
+
+.page-main .rules {margin:60px auto 0 auto; max-width:768px}
+.page-main .back-link {margin:0}
+.page-main .rules+.back-link {height:0}
+.page-main .rules+.back-link a {position:relative; top:-55px}
+.page-main .back-link a {background:#ff5d44; color:#fff}
+.page-main .back-link a:hover {background:#000; color:#fff}
+.page-main .back-link a svg {fill:#fff}
+.page-main .back-link a:hover svg {fill:#fff}
+.page-main .main-header .back-link {position:absolute; left:20px; bottom:0}
+
+.page-404 .main-header {height:110px}
+.page-404-icon {text-align:center; margin:100px 0 0 0; line-height:0}
+.page-404-title {text-align:center; margin:19px 0 0 0; font-weight:bold; font-size:100px; line-height:130px; letter-spacing:0.05em; color:#fff; text-shadow:2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000}
+.fonts-loaded .page-404-title {font-family:Oswald, sans-serif}
+.page-404-text {text-align:center; font-weight:500; font-size:48px; line-height:62px; letter-spacing:0.05em; text-transform:uppercase}
+.fonts-loaded .page-404-text {font-family:Oswald, sans-serif}
+.page-404-link {margin:40px 0 0 0; text-align:center}
+.page-404-link a {font-weight:500; font-size:18px; line-height:22px; letter-spacing:0; text-transform:none; padding:10px 15px}
+.page-404-link svg {display:inline-block; vertical-align:middle; margin:-2px 10px 0 0; width:24px; height:24px; fill:#fff; transition:fill 0.2s}
+.page-404-link a:hover svg {fill:#fff}
+
+.feedback-contacts {margin:40px 0 0 0}
+.feedback-contacts::after {content:""; display:block; clear:both}
+.feedback-contacts-field {float:left; min-width:210px; max-width:50%; padding:0 10px 0 0}
+.feedback-contacts-field+.feedback-contacts-field {padding:0 0 0 10px}
+.feedback-contacts-field .form-label {margin:0}
+.feedback-contacts-field-text {margin:2px 0 0 0; font-size:24px; line-height:29px; white-space:nowrap; position:relative; overflow:hidden; text-overflow:ellipsis}
+.feedback-notice {margin:30px 0 0 0}
+.feedback-notice-title {font-weight:bold; text-transform:uppercase}
 
 footer {height:87px; position:relative; margin:-87px 0 0 0}
 .page-main footer {background:#fafafa}
@@ -531,8 +610,28 @@ footer {height:87px; position:relative; margin:-87px 0 0 0}
 
 .footer-copyrights {padding:27px 0 0 0; font-size:20px; line-height:30px; text-transform:uppercase; letter-spacing:0.05em}
 
-.up-link {display:block; opacity:0; visibility:hidden; position:fixed; z-index:90; right:68px; bottom:40px; width:38px; height:38px; border:2px solid #000; border-radius:50%; background:#000; box-shadow:4px 4px 30px rgba(0, 0, 0, 0.15); transition:opacity 0.2s, background-color 0.2s, border-color 0.2s}
+.up-link {display:block; opacity:0; visibility:hidden; position:fixed; z-index:90; right:68px; bottom:40px; width:38px; height:38px; border:2px solid #000; border-radius:50%; background:#fff; box-shadow:4px 4px 30px rgba(0, 0, 0, 0.15); transition:opacity 0.2s, background-color 0.2s, border-color 0.2s}
 .up-link.visible {opacity:1; visibility:visible}
-.up-link:hover {background:#fff}
-.up-link svg {display:block; position:absolute; left:50%; top:50%; margin:-4.5px 0 0 -8px; width:16px; height:9px; fill:none; stroke:#fff; transition:stroke 0.2s}
-.up-link:hover svg {stroke:#000}
+.up-link:hover {background:#000}
+.up-link svg {display:block; position:absolute; left:50%; top:50%; margin:-4.5px 0 0 -8px; width:16px; height:9px; fill:none; stroke:#000; transition:stroke 0.2s}
+.up-link:hover svg {stroke:#fff}
+
+.window-open,
+.window-open body {overflow:hidden; position:fixed; left:0; top:0; right:0; bottom:0}
+
+.window {position:fixed; left:0; top:0; right:0; bottom:0; overflow:auto; z-index:999; background:#9e9e9e; text-align:center}
+.window::before {content:""; display:inline-block; height:100%; vertical-align:middle}
+.window-loading {position:absolute; left:0; top:0; right:0; bottom:0; background:url(../images/loading.svg) no-repeat center}
+.window-container {display:inline-block; vertical-align:middle; position:relative; text-align:left; background:#fff; margin:0; transition:opacity 0.2s; box-shadow:6px 6px 40px rgba(0, 0, 0, 0.25)}
+.window-container-preload {opacity:0}
+.window-close {display:block; position:absolute; right:30px; top:18px; width:36px; height:36px; border-radius:50%; background:#000; transition:background 0.2s}
+.window-close:hover {background:#fff}
+.window-close svg {display:block; width:18px; height:18px; fill:none; stroke:#fff; position:absolute; left:50%; top:50%; margin:-9px 0 0 -9px; transition:stroke 0.2s}
+.window-close:hover svg {stroke:#000}
+
+.window-title {background:#d3d3d3; padding:20px 60px 20px 30px; color:#000; font-weight:500; font-size:30px; line-height:35px}
+.window-content {padding:30px}
+.window-content *:first-child {margin-top:0}
+.window-content *:last-child {margin-bottom:0}
+.window-bottom {margin:30px 0 0 0; background:#ebebeb; font-size:0; line-height:0; letter-spacing:-1px; padding:23px 30px; text-align:center}
+.window-bottom a {margin:0 5px; font-size:16px; line-height:24px; font-weight:500}

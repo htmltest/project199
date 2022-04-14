@@ -5,6 +5,7 @@
         <title>Stay Loyal</title>
 
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/styles-indola.css" />
 
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=1200" />
@@ -21,7 +22,7 @@
 
                         <div class="logos">
                             <div class="logo-stayloyal"><img src="images/logo-stayloyal.svg" alt="" /></div>
-                            <div class="logo-sf"><img src="images/logo-sf.svg" alt="" /></div>
+                            <div class="logo-indola"><img src="images/logo-indola.svg" alt="" /></div>
                         </div>
 
                         <div class="header-bonus"><a href="#"><svg><use xlink:href="images/sprite.svg#header-bonus"></use></svg>33 662 баллов</a></div>
@@ -53,9 +54,9 @@
                             <li><a href="#"><svg><use xlink:href="images/sprite.svg#cabinet-menu-catalogue"></use></svg>Каталог поддержки</a></li>
                             <li><a href="#"><svg><use xlink:href="images/sprite.svg#cabinet-menu-cart"></use></svg>Корзина</a></li>
                             <li><a href="#"><svg><use xlink:href="images/sprite.svg#cabinet-menu-orders"></use></svg>Заказы</a></li>
-                            <li class="active"><a href="#"><svg><use xlink:href="images/sprite.svg#cabinet-menu-news"></use></svg>Новости</a></li>
+                            <li><a href="#"><svg><use xlink:href="images/sprite.svg#cabinet-menu-news"></use></svg>Новости</a></li>
                             <li><a href="#"><svg><use xlink:href="images/sprite.svg#cabinet-menu-rules"></use></svg>Условия программы</a></li>
-                            <li><a href="#"><svg><use xlink:href="images/sprite.svg#cabinet-menu-suggest"></use></svg>Хочу предложить</a></li>
+                            <li class="active"><a href="#"><svg><use xlink:href="images/sprite.svg#cabinet-menu-suggest"></use></svg>Хочу предложить</a></li>
                             <li><a href="#"><svg><use xlink:href="images/sprite.svg#cabinet-menu-logout"></use></svg>Выйти</a></li>
                         </ul>
                     </div>
@@ -63,19 +64,33 @@
 
                     <!-- cabinet content -->
                     <div class="cabinet-content">
+                        <h1>Хочу предложить</h1>
+                        <div class="feedback-contacts">
+                            <div class="feedback-contacts-field">
+                                <div class="form-label">Имя</div>
+                                <div class="feedback-contacts-field-text">Ильшат</div>
+                            </div>
+                            <div class="feedback-contacts-field">
+                                <div class="form-label">E-mail</div>
+                                <div class="feedback-contacts-field-text">cherepah@list.ru</div>
+                            </div>
+                        </div>
+                        <div class="profile-form">
+                            <form action="ajax/success.html" method="post" class="ajax-form">
 
-                        <div class="back-link"><a href="#"><svg><use xlink:href="images/sprite.svg#back-link"></use></svg>Назад к новостям</a></div>
-                        <h2>Весенние подарки для защиты природной красоты волос всем участникам программы PHclub!</h2>
+                                <div class="form-label">Ваш вопрос или пожелание</div>
+                                <div class="form-input"><textarea name="message" rows="5" cols="10" class="required"></textarea></div>
 
-                        <div class="news-detail-date">24.02.2016</div>
-                        <p class="anonce-text">Дорогие участники программы PH Club,</p>
-                        <p><img src="files/news-detail.jpg" alt="" /></p>
-                        <p>благодарим Вас за доверие и любовь к нашему бренду и за то, что Вы остаетесь с программой PH Club как верные и надежные партнеры.<br /> Мы все с нетерпением ждем окончания зимы и начала тех перемен, что обычно привносит в нашу жизнь весна. А самое главное – мы мечтаем об отпуске и уже строим планы, в которые обязательно входят солнце, море, пляж!</p>
-                        <p>В преддверии этого замечательного периода, мы бы хотели подарить Вам наши продукты, которые как нельзя лучше защищают и сохраняют природную красоту и здоровье волос в условиях жаркого и солнечного времени года, независимо от того, отдыхаете ли вы на пляже или находитесь на солнце в городских условиях:</p>
-                        <p>Маска для нормальных и жёстких волос Bonacure Oil Miracle Gold Shimmer Treatment, 750&nbsp;мл, 2шт.<br /> Шампунь «Защита от солнца», 200 мл, 4шт.<br /> Спрей-кондиционер «Защита от солнца», 150 мл, 4 шт.</p>
+                                <div class="form-ctrl">
+                                    <div class="form-submit"><input type="submit" value="отправить" class="btn" /></div>
+                                </div>
 
-                        <div class="back-link"><a href="#"><svg><use xlink:href="images/sprite.svg#back-link"></use></svg>Назад к новостям</a></div>
-
+                            </form>
+                        </div>
+                        <div class="feedback-notice">
+                            <div class="feedback-notice-title">Важно знать</div>
+                            <div class="feedback-notice-text">Мы работаем с 9 до 18 ежедневно, если Ваш запрос был отправлен в нерабочее время, администратор сможет его обработать на следующий день<br /> Спасибо!</div>
+                        </div>
                     </div>
                     <!-- cabinet content END -->
 
@@ -91,7 +106,7 @@
 
                 <div class="footer-container">
 
-                    <div class="footer-copyrights">© 2010—2022 Schwarzkopf Professional</div>
+                    <div class="footer-copyrights">© 2010—2022 indola</div>
 
                 </div>
 

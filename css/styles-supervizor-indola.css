@@ -1,0 +1,39 @@
+a {color:#2b7de2}
+
+.btn {background:#2b7de2; color:#fff}
+.btn:hover {color:#fff; background:#000}
+.btn:disabled {background:#fafafa; color:#bfbfbf}
+
+.pager a,
+.pager span {color:#373737}
+.pager a:hover {color:#2b7de2}
+.pager a.pager-prev svg,
+.pager a.pager-next svg {stroke:#373737}
+.pager a.active {color:#fff; background:#2b7de2; border-color:#2b7de2}
+
+header {background:#2b7de2}
+.logo-indola {margin:19px 0 0 420px}
+
+.header-btns a {background:#fff}
+.header-btns a:hover {background:#d3d3d3}
+.header-btns a svg {fill:#000}
+
+.header-user a {color:#fff}
+.header-user a:hover {color:#fff}
+.header-user strong {background:#fff}
+.header-user a:hover strong {background:#d3d3d3}
+.header-user svg {fill:#000}
+.header-user a:hover svg {fill:#000}
+
+.supervizor-saloons-list-cell span {color:#2b7de2}
+
+.window-close {background:#1a68c9}
+.window-close:hover {background:#fff}
+.window-close svg {stroke:#fff}
+.window-close:hover svg {stroke:#1a68c9}
+
+.window-title {background:#2b7de2; color:#fff}
+
+.window-saloon-type {color:#2b7de2}
+
+.bonus-info-level-1 {background:#2b7de2}

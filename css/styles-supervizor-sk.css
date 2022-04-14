@@ -1,0 +1,28 @@
+.btn {background:#ff5d44; color:#fff}
+.btn:hover {color:#fff; background:#000}
+.btn:disabled {background:#fafafa; color:#bfbfbf}
+
+header {background:#ff5d44}
+.logo-sf {margin:19px 0 0 382px}
+
+.header-btns a {background:#fff}
+.header-btns a:hover {background:#d3d3d3}
+.header-btns a svg {fill:#000}
+
+.header-user a {color:#fff}
+.header-user a:hover {color:#fff}
+.header-user strong {background:#fff}
+.header-user a:hover strong {background:#d3d3d3}
+.header-user svg {fill:#000}
+.header-user a:hover svg {fill:#000}
+
+.supervizor-saloons-list-cell span {color:#ff5d44}
+
+.window-close {background:#f03f23}
+.window-close:hover {background:#fff}
+.window-close svg {stroke:#fff}
+.window-close:hover svg {stroke:#f03f23}
+
+.window-title {background:#ff5d44; color:#fff}
+
+.window-saloon-type {color:#ff5d44}

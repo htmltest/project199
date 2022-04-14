@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Stay Loyal</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/styles-supervizor.css" />
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=1200" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <header>
+                    <div class="container">
+
+                        <div class="logos">
+                            <div class="logo-stayloyal"><img src="images/logo-stayloyal.svg" alt="" /></div>
+                        </div>
+
+                        <div class="header-btns">
+                            <a href="#"><svg class="header-logout"><use xlink:href="images/sprite.svg#header-logout"></use></svg></a>
+                        </div>
+
+                        <div class="header-user">
+                            <a href="#">
+                                <strong><svg><use xlink:href="images/sprite.svg#header-user-edit"></use></svg></strong>
+                                <span>Супервайзер Елена Сафроненко</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </header>
+
+                <!-- container -->
+                <div class="container">
+
+                    <div class="back-link-auth"><a href="#"><svg><use xlink:href="images/sprite.svg#back-link-auth"></use></svg>На главную</a></div>
+
+                    <div class="supervizor-profile">
+                        <h1>Профиль супервайзера</h1>
+                        <div class="supervizor-profile-info">
+                            <div class="supervizor-profile-info-row">
+                                <div class="supervizor-profile-info-row-title">Дата обновления:</div>
+                                <div class="supervizor-profile-info-row-value">11.03.2022<span>|</span>11:58:36</div>
+                            </div>
+                            <div class="supervizor-profile-info-row">
+                                <div class="supervizor-profile-info-row-title">Последняя авторизация:</div>
+                                <div class="supervizor-profile-info-row-value">06.04.2022<span>|</span>13:27:59</div>
+                            </div>
+                        </div>
+                        <div class="supervizor-profile-form">
+                            <form action="#" method="post">
+                                <div class="form-label">Фамилия</div>
+                                <div class="form-input"><input type="text" name="lastname" value="Сафроненко" class="required" /></div>
+
+                                <div class="form-label">Имя</div>
+                                <div class="form-input"><input type="text" name="firstname" value="Елена" class="required" /></div>
+
+                                <div class="form-label">Отчество</div>
+                                <div class="form-input"><input type="text" name="middlename" value="" /></div>
+
+                                <div class="form-label">E-mail</div>
+                                <div class="form-input"><input type="text" name="email" value="elena.safronenko@gmail.com" class="required email" /></div>
+
+                                <div class="form-label">Логин</div>
+                                <div class="form-input"><input type="text" name="login" value="TSR_37" class="required" /></div>
+
+                                <div class="form-label">Новый пароль:</div>
+                                <div class="form-input"><input type="password" name="password" value="" id="password" /></div>
+
+                                <div class="form-label">Подтверждение нового пароля:</div>
+                                <div class="form-input"><input type="password" name="repassword" value="" equalTo="#password" /></div>
+
+                                <div class="form-ctrl">
+                                    <div class="form-reset"><input type="reset" value="Сбросить" class="btn-reset" /></div>
+                                    <div class="form-submit"><input type="submit" value="Сохранить изменения" class="btn-border" /></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="back-link-auth"><a href="#"><svg><use xlink:href="images/sprite.svg#back-link-auth"></use></svg>На главную</a></div>
+
+                </div>
+                <!-- container END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="container">
+
+                <div class="footer-container">
+
+                    <div class="footer-copyrights">© 2010—2022 STAY_LOYAL</div>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <a href="#" class="up-link"><svg><use xlink:href="images/sprite.svg#up-link"></use></svg></a>
+
+        <script>
+            var pathTemplate = './';
+        </script>
+        <script src="js/fonts.js"></script>
+
+        <script src="js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/tools.js"></script>
+        <script src="js/tools-supervizor.js"></script>
+
+    </body>
+</html>

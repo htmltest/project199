@@ -6,8 +6,12 @@ ul li::before {background:#3c476b}
 .wrapper tbody tr:last-child td {border-bottom-color:#3c476b}
 
 .btn {background:#e1e7fb; color:#3c476b}
-.btn:hover {color:#3c476b; background:rgba(225, 231, 251, 0.8)}
+.btn:hover {color:#fff; background:#000}
 .btn:disabled {background:#fafafa; color:#bfbfbf}
+
+.btn-border {background:#fff; color:#e1e7fb; border-color:#e1e7fb}
+.btn-border:hover {color:#fff; background:#000; border-color:#000}
+.btn-border:disabled {background:#fafafa; color:#bfbfbf}
 
 form.loading::after {background-image:url(../images/loading-indola.svg) no-repeat center}
 
@@ -50,11 +54,11 @@ form.loading::after {background-image:url(../images/loading-indola.svg) no-repea
 .header-btns a:hover svg {fill:#3c476b}
 
 .header-user a:hover {color:#3c476b}
-.header-user a:hover svg {fill:#3c476b}
+.header-user a:hover svg {fill:#e1e7fb}
 
 .cabinet-menu ul {border-color:#bac4e6}
 .cabinet-menu ul li {border-color:#bac4e6}
-.cabinet-menu ul li a:hover {background:#e1e7fb}
+.cabinet-menu ul li a:hover {color:#3c476b; background:#e1e7fb}
 .cabinet-menu ul li.active a {color:#3c476b; background:#e1e7fb}
 .cabinet-menu ul li a:hover svg,
 .cabinet-menu ul li.active a svg {fill:#3c476b}
@@ -84,6 +88,8 @@ form.loading::after {background-image:url(../images/loading-indola.svg) no-repea
 .main-header-title::before {display:none}
 .main-header-subtitle {margin:25px 0 0 0; font-size:24px; line-height:36px; letter-spacing:0; text-transform:none}
 .fonts-loaded .main-header-subtitle {font-family:Montserrat, sans-serif}
+.main-header-title-rules {margin:116px 0 0 0; padding:0 0 82px 0; font-size:60px; line-height:66px; font-weight:bold; letter-spacing:0; text-transform:none}
+.fonts-loaded .main-header-title-rules {font-family:Montserrat, sans-serif}
 
 .main-rules {margin:140px 0 0 0}
 .fonts-loaded .main-rules {font-family:Montserrat, sans-serif}
@@ -161,3 +167,21 @@ form.loading::after {background-image:url(../images/loading-indola.svg) no-repea
 .back-link-auth a:hover {background:#3c476b; color:#fff}
 .back-link-auth a svg {fill:#3c476b; transition:fill 0.2s}
 .back-link-auth a:hover svg {fill:#fff}
+
+.rules-item-content {border-top-color:#bac4e6}
+.rules-item-content li::before {background:#3c476b}
+.rules-item-content li li::before {background:#bac4e6}
+.wrapper .rules-item-content table th {border-bottom-color:#bac4e6}
+
+.page-main .back-link a {background:#e1e7fb; color:#3c476b}
+.page-main .back-link a:hover {background:#000; color:#fff}
+.page-main .back-link a svg {fill:#3c476b}
+.page-main .back-link a:hover svg {fill:#fff}
+
+.page-404-title {color:#000; text-shadow:none}
+.fonts-loaded .page-404-title {font-family:Montserrat, sans-serif}
+.page-404-text {font-weight:bold; font-size:36px; line-height:47px; letter-spacing:0; text-transform:none}
+.fonts-loaded .page-404-text {font-family:Montserrat, sans-serif}
+.page-404-link {margin:55px 0 0 0}
+.page-404-link svg {fill:#3c476b}
+.page-404-link a:hover svg {fill:#fff}
