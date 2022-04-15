@@ -121,3 +121,55 @@ header {background:#f4f4f4}
 .catalogue-item-preview {margin:10px 0 0 0; height:230px; line-height:230px}
 .catalogue-item-preview img {display:inline-block; vertical-align:middle; max-height:230px}
 .catalogue-item-btn {margin:10px 0 0 0; border-top:1px solid #d1d1d1; padding:37px 0 0 0; font-weight:bold; font-size:16px; line-height:24px; letter-spacing:0.05em; text-transform:uppercase}
+
+.analytics-data {margin:40px 0 0 0; position:relative; overflow:auto}
+.analytics-data-inner {display:inline-block; vertical-align:top}
+.wrapper .analytics-data-inner table {margin:0}
+.wrapper .analytics-data-inner th {vertical-align:top; padding:0; font-weight:500; font-size:8px; line-height:12px; text-align:left}
+.wrapper .analytics-data-inner th:last-child {padding-right:0}
+.wrapper .analytics-data-inner td {padding:0; border-top:1px solid #d1d1d1; height:61px; padding:15px 0}
+.wrapper .analytics-data-inner td:last-child {padding-right:0}
+.wrapper .analytics-data-inner tbody tr:first-child td {border-top:1px solid #d1d1d1}
+.wrapper .analytics-data-inner tbody tr:last-child td {border-bottom:1px solid #d1d1d1}
+.wrapper .analytics-data-inner tbody tr:hover td {background:#f4f4f4}
+
+.wrapper .analytics-data-inner th.analytics-data-header-top {padding:0 0 10px 0}
+.wrapper .analytics-data-inner th.analytics-data-header {color:#9e9e9e; padding:17px 0 7px 0; height:48px; text-align:center}
+.wrapper .analytics-data-inner th.analytics-data-header-id {width:38px; padding-right:5px; text-align:left}
+.wrapper .analytics-data-inner th.analytics-data-header-name {width:172px; padding-right:10px; text-align:left}
+.wrapper .analytics-data-inner th.analytics-data-header-level-start {width:86px; padding-right:10px; text-align:center}
+.wrapper .analytics-data-inner th.analytics-data-header-q-month {width:55px; background:#fafafa; padding-right:5px; text-align:center; position:relative}
+.wrapper .analytics-data-inner th.analytics-data-header-q-month::after {content:""; display:block; position:absolute; right:0; top:0; bottom:0; width:5px; background:#fff}
+.wrapper .analytics-data-inner th.analytics-data-header-q-summ {width:55px; background:#fafafa; padding-right:5px; text-align:center; position:relative}
+.wrapper .analytics-data-inner th.analytics-data-header-q-summ::after {content:""; display:block; position:absolute; right:0; top:0; bottom:0; width:5px; background:#fff}
+.wrapper .analytics-data-inner th.analytics-data-header-q-level {width:95px; background:#fafafa; padding-right:10px; text-align:center; position:relative}
+.wrapper .analytics-data-inner th.analytics-data-header-q-level::after {content:""; display:block; position:absolute; right:0; top:0; bottom:0; width:10px; background:#fff}
+.wrapper .analytics-data-inner th.analytics-data-header-volume {width:65px; padding-right:10px; text-align:center}
+.wrapper .analytics-data-inner th.analytics-data-header-received {width:65px; padding-right:10px; text-align:center}
+.wrapper .analytics-data-inner th.analytics-data-header-spent {width:65px; padding-right:10px; text-align:center}
+.wrapper .analytics-data-inner th.analytics-data-header-account {width:55px; text-align:center}
+.wrapper .analytics-data-inner td.analytics-data-cell-id {width:38px; padding-right:5px; font-size:10px; line-height:15px; font-weight:500; color:#9e9e9e; letter-spacing:0.05em}
+.wrapper .analytics-data-inner td.analytics-data-cell-name {width:172px; padding-right:10px; font-size:13px; line-height:14px}
+.wrapper .analytics-data-inner td.analytics-data-cell-name a {text-decoration:none}
+.wrapper .analytics-data-inner td.analytics-data-cell-name a:hover {text-decoration:underline}
+.wrapper .analytics-data-inner td.analytics-data-cell-level-start {width:86px; padding-right:10px; font-size:10px; line-height:18px; font-weight:500; text-transform:uppercase}
+.wrapper .analytics-data-inner td.analytics-data-cell-level-start span {display:block; width:76px; height:18px; border-radius:3px; text-align:center; color:#fff}
+.wrapper .analytics-data-inner td.analytics-data-cell-level-start span.bonus-info-level-0 {color:#9e9e9e}
+.wrapper .analytics-data-inner td.analytics-data-cell-q-month {width:55px; background:#fafafa; padding-right:5px; text-align:center; position:relative; font-size:13px; line-height:16px}
+.wrapper .analytics-data-inner td.analytics-data-cell-q-month::after {content:""; display:block; position:absolute; right:0; top:0; bottom:0; width:5px; background:#fff}
+.wrapper .analytics-data-inner tr:hover td.analytics-data-cell-q-month::after {background:#f4f4f4}
+.wrapper .analytics-data-inner td.analytics-data-cell-q-summ {width:55px; background:#fafafa; padding-right:5px; text-align:center; position:relative; font-size:13px; line-height:16px; font-weight:bold}
+.wrapper .analytics-data-inner td.analytics-data-cell-q-summ::after {content:""; display:block; position:absolute; right:0; top:0; bottom:0; width:5px; background:#fff}
+.wrapper .analytics-data-inner tr:hover td.analytics-data-cell-q-summ::after {background:#f4f4f4}
+.wrapper .analytics-data-inner td.analytics-data-cell-q-summ span {display:block; margin:2px 0 -14px 0; font-weight:normal; font-size:10px; line-height:12px}
+.wrapper .analytics-data-inner td span.inc {color:#2d8c24}
+.wrapper .analytics-data-inner td span.dec {color:#e51c21}
+.wrapper .analytics-data-inner td.analytics-data-cell-q-level {width:95px; background:#fafafa; padding-right:10px; text-align:center; position:relative; font-size:10px; line-height:18px; font-weight:500; text-transform:uppercase}
+.wrapper .analytics-data-inner td.analytics-data-cell-q-level::after {content:""; display:block; position:absolute; right:0; top:0; bottom:0; width:10px; background:#fff}
+.wrapper .analytics-data-inner tr:hover td.analytics-data-cell-q-level::after {background:#f4f4f4}
+.wrapper .analytics-data-inner td.analytics-data-cell-q-level span {display:block; width:70px; height:18px; border-radius:3px; text-align:center; color:#fff; margin:0 auto}
+.wrapper .analytics-data-inner td.analytics-data-cell-q-level span.bonus-info-level-0 {color:#9e9e9e}
+.wrapper .analytics-data-inner td.analytics-data-cell-volume {width:65px; padding-right:10px; text-align:center; font-size:13px; line-height:16px; font-weight:bold}
+.wrapper .analytics-data-inner td.analytics-data-cell-received {width:65px; padding-right:10px; text-align:center; font-size:13px; line-height:16px}
+.wrapper .analytics-data-inner td.analytics-data-cell-spent {width:65px; padding-right:10px; text-align:center; font-size:13px; line-height:16px}
+.wrapper .analytics-data-inner td.analytics-data-cell-account {width:55px; text-align:center; font-size:13px; line-height:16px; font-weight:bold}

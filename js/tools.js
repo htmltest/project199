@@ -31,7 +31,7 @@ $(document).ready(function() {
         var curValue = Number(curInput.val());
         curValue--;
         if (curValue <= 1) {
-            curValue == 1;
+            curValue = 1;
         }
         curInput.val(curValue);
         recalcCart();
@@ -45,7 +45,7 @@ $(document).ready(function() {
         var curMax = Number(curInput.attr('data-max'));
         curValue++;
         if (curValue >= curMax) {
-            curValue == curMax;
+            curValue = curMax;
         }
         curInput.val(curValue);
         recalcCart();
@@ -118,6 +118,59 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('body').on('click', '.main-catalogue-item-btn .btn', function(e) {
+        $('.to-cart').remove();
+        var curLink = $(this);
+        var curItem = curLink.parents().filter('.main-catalogue-item');
+        $.ajax({
+            type: 'POST',
+            url: curLink.attr('href'),
+            dataType: 'html',
+            cache: false
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            alert('Сервис временно недоступен, попробуйте позже.' + textStatus);
+        }).done(function(html) {
+            $('body').append(html);
+            curLink.remove();
+            curItem.find('.main-catalogue-item-btn').append('<div class="main-catalogue-item-count"><svg class="catalogue-in-cart"><use xlink:href="' + pathTemplate + 'images/sprite.svg#catalogue-in-cart"></use></svg><div class="main-catalogue-item-count-value">1</div><div class="main-catalogue-item-count-ctrl"><a href="#" class="main-catalogue-item-count-inc"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#cart-row-inc"></use></svg></a><a href="#" class="main-catalogue-item-count-dec"><svg><use xlink:href="' + pathTemplate + 'images/sprite.svg#cart-row-dec"></use></svg></a></div></div>');
+            var curCart = 0;
+            if ($('.header-cart').parent().hasClass('active')) {
+                curCart = Number($('.header-cart').parent().find('span').html());
+            }
+            curCart++;
+            $('.header-cart').parent().addClass('active');
+            $('.header-cart').parent().find('span').remove();
+            $('.header-cart').parent().append('<span>' + curCart + '</span>');
+        });
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.main-catalogue-item-count-dec', function(e) {
+        var curRow = $(this).parents().filter('.main-catalogue-item-count');
+        var curInput = curRow.find('.main-catalogue-item-count-value');
+        var curValue = Number(curInput.html());
+        curValue--;
+        if (curValue <= 1) {
+            curValue = 1;
+        }
+        curInput.html(curValue);
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.main-catalogue-item-count-inc', function(e) {
+        var curRow = $(this).parents().filter('.main-catalogue-item-count');
+        var curInput = curRow.find('.main-catalogue-item-count-value');
+        var curValue = Number(curInput.html());
+        curValue++;
+        curInput.html(curValue);
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.to-cart-close', function(e) {
+        $('.to-cart').remove();
+        e.preventDefault();
+    });
+
 });
 
 function initForm(curForm) {
@@ -125,6 +178,23 @@ function initForm(curForm) {
 
     curForm.find('.form-input textarea').each(function() {
         $(this).css({'height': this.scrollHeight, 'overflow-y': 'hidden'});
+    });
+
+    curForm.find('.form-select select').each(function() {
+        var curSelect = $(this);
+        var options = {
+            minimumResultsForSearch: 20
+        }
+
+        if ($(window).width() > 1119) {
+            options['dropdownAutoWidth'] = true;
+        }
+
+        if (curSelect.parents().filter('.window').length == 1) {
+            options['dropdownParent'] = $('.window-content');
+        }
+
+        curSelect.select2(options);
     });
 
     curForm.validate({
@@ -331,7 +401,7 @@ $(window).on('load resize scroll', function() {
 
 $(window).on('load resize', function() {
 
-    $('.main-catalogue').each(function() {
+    $('.main-catalogue-list').each(function() {
         var curList = $(this);
 
         curList.find('.main-catalogue-item-title').css({'min-height': '0px'});
