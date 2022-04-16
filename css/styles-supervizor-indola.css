@@ -37,3 +37,12 @@ header {background:#2b7de2}
 .window-saloon-type {color:#2b7de2}
 
 .bonus-info-level-1 {background:#2b7de2}
+
+.report-item-header-content a:hover,
+.report-item.open .report-item-header-content a {background:#2b7de2}
+
+.supervizor-saloons-filter-q:hover .supervizor-saloons-filter-q-current::before {border-color:#2b7de2}
+.supervizor-saloons-filter-q.open .supervizor-saloons-filter-q-current::before {border-color:#2b7de2}
+.supervizor-saloons-filter-q-list-row-q input:checked+span {background:#2b7de2}
+.supervizor-saloons-filter-status:hover .supervizor-saloons-filter-status-current::before {border-color:#2b7de2}
+.supervizor-saloons-filter-status.open .supervizor-saloons-filter-status-current::before {border-color:#2b7de2}
