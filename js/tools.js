@@ -171,6 +171,29 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.orders').each(function() {
+        if ($('.orders-item').length > 3) {
+            $('.orders-more').addClass('visible');
+        }
+    });
+
+    $('.orders-more a').click(function(e) {
+        var curBlock = $('.orders');
+        if ($('.orders-more').hasClass('view-all')) {
+            count = 3;
+            curBlock.find('.orders-item.visible').removeClass('visible');
+            $('.orders-more').removeClass('view-all');
+        } else {
+            var count = curBlock.find('.orders-item:visible').length;
+            count += 3;
+            curBlock.find('.orders-item:lt(' + count + ')').addClass('visible');
+            if (count >= curBlock.find('.orders-item').length) {
+                $('.orders-more').addClass('view-all');
+            }
+        }
+        e.preventDefault();
+    });
+
 });
 
 function initForm(curForm) {
@@ -333,7 +356,7 @@ function updateBonusHistory() {
     var count = Number(curBlock.attr('data-count'));
     var type = $('.bonus-history-radios input:checked').val();
 
-    $('.bonus-history-list-row').removeClass('visible inverse');
+    $('.bonus-history-list-row').removeClass('visible');
     var curCount = 0;
     $('.bonus-history-list-row').each(function() {
         if (curCount < count) {
@@ -354,7 +377,6 @@ function updateBonusHistory() {
             }
         }
     });
-    $('.bonus-history-list-row.visible:odd').addClass('inverse');
     var allCount = 0;
     if (type == '') {
         allCount = $('.bonus-history-list-row').length;

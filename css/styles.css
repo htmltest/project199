@@ -81,7 +81,7 @@ form.loading::after {content:""; display:block; position:absolute; left:0; top:0
 .form-input textarea {position:relative; border:1px solid #bfbfbf; font:24px/29px Arial, sans-serif; color:#000; vertical-align:top; margin:0; padding:15px 19px; width:100%; height:61px; box-sizing:border-box; outline:none; border-radius:0; background:#fff; -webkit-appearance:none; transition:border-color 0.2s}
 .fonts-loaded .form-input input,
 .fonts-loaded .form-input textarea {font-family:Roboto, sans-serif}
-.form-input textarea {height:auto; min-height:245px; resize:none; overflow:auto}
+.form-input textarea {font-size:18px; line-height:24px; height:auto; min-height:245px; resize:none; overflow:auto}
 .form-input input:hover,
 .form-input textarea:hover {border-color:#ff5d44}
 .form-input input:focus,
@@ -99,7 +99,7 @@ label.error {display:block; margin:2px 0 0 0; font-weight:500; font-size:14px; l
 
 .form-select {position:relative; margin:25px 0}
 .form-label+.form-select {margin-top:5px}
-.form-select select {position:relative; border:1px solid #bfbfbf; font:24px/29px Arial, sans-serif; color:#000; vertical-align:top; margin:0; padding:15px 19px; width:100%; height:61px; box-sizing:border-box; outline:none; border-radius:0; background:#fff; -webkit-appearance:none; transition:border-color 0.2s}
+.form-select select {position:relative; border:1px solid #bfbfbf; font:18px/29px Arial, sans-serif; color:#000; vertical-align:top; margin:0; padding:15px 19px; width:100%; height:61px; box-sizing:border-box; outline:none; border-radius:0; background:#fff; -webkit-appearance:none; transition:border-color 0.2s}
 .form-select label.error {position:absolute; right:0; bottom:0; white-space:nowrap; margin:0}
 
 .form-checkbox {margin:10px 0}
@@ -215,7 +215,7 @@ header {height:80px; background:#f7f7f7}
 .back-link:first-child {margin:0}
 .back-link+h1 {margin-top:40px}
 .back-link+h2 {margin-top:40px}
-.back-link a {display:inline-block; vertical-align:top; height:42px; padding:0 15px; background:#fafafa; line-height:42px; text-decoration:none; font-weight:500; font-size:18px; transition:background 0.2s, color 0.2s; color:#000}
+.back-link a {display:inline-block; vertical-align:top; height:42px; padding:0 15px; background:#f4f4f4; line-height:42px; text-decoration:none; font-weight:500; font-size:18px; transition:background 0.2s, color 0.2s; color:#000}
 .back-link a:hover {background:#ff5d44; color:#fff}
 .back-link a svg {display:inline-block; vertical-align:middle; width:25px; height:24px; fill:#000; margin:-2px 10px 0 0; transition:fill 0.2s}
 .back-link a:hover svg {fill:#fff}
@@ -299,7 +299,7 @@ header {height:80px; background:#f7f7f7}
 .main-header-title-rules {margin:175px 0 0 0; padding:0 0 127px 0; font-size:36px; line-height:47px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; position:relative}
 .fonts-loaded .main-header-title-rules {font-family:Oswald, sans-serif}
 
-.main-title {font-weight:500; font-size:100px; line-height:130px; letter-spacing:0.05em; text-transform:uppercase; color:#fff; text-shadow:2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000}
+.main-title {font-weight:500; font-size:100px; line-height:130px; letter-spacing:0.05em; text-transform:uppercase; color:#fff; -webkit-text-stroke:2px #000; -webkit-text-fill-color:transparent}
 .fonts-loaded .main-title {font-family:Oswald, sans-serif}
 
 .main-participants {margin:120px 0 0 0}
@@ -356,7 +356,8 @@ header {height:80px; background:#f7f7f7}
 .main-catalogue-list-auth .main-catalogue-item {padding:20px 20px 0 20px}
 .main-catalogue-item:nth-child(n+5) {position:absolute; left:-99999px; top:-99999px}
 .main-catalogue.open .main-catalogue-item:nth-child(n+5) {position:relative; left:auto; top:auto}
-.main-catalogue-item-inner {border:3px solid #000; background:#fff; padding:40px 30px 30px 30px; position:relative; text-align:center}
+.main-catalogue-item-inner {border:3px solid #000; background:#fff; padding:40px 30px 30px 30px; position:relative; text-align:center; transition:transform 0.2s, box-shadow 0.2s}
+.main-catalogue-item-inner:hover {transform:translateY(-5px); box-shadow:0 0 5px rgba(0, 0, 0, 0.2)}
 .main-catalogue-list-auth .main-catalogue-item-inner {border:1px solid #000; padding:20px; text-align:left}
 .main-catalogue-item-title {font-weight:bold; font-size:24px; line-height:36px; letter-spacing:0.05em; text-transform:uppercase}
 .main-catalogue-list-auth .main-catalogue-item-title {font-weight:500; font-size:20px; line-height:26px}
@@ -371,7 +372,8 @@ header {height:80px; background:#f7f7f7}
 .main-catalogue-list-auth .main-catalogue-item-btn span {float:left; width:auto; height:auto; background:none; font-weight:900; font-size:16px; line-height:24px; margin:15px 0 0 0}
 .main-catalogue-list-auth .main-catalogue-item-btn .btn {float:right; font-size:16px; line-height:24px; font-weight:500}
 .main-catalogue-all {margin:55px 0 0 0}
-.main-catalogue-all a {display:block; width:870px; margin:0 auto; height:60px; text-decoration:none; color:#000; background:#fafafa; font-weight:500; font-size:20px; line-height:60px; letter-spacing:0.05em; text-transform:uppercase; text-align:center; transition:background 0.2s, color 0.2s}
+.main-catalogue-all a {display:block; width:870px; margin:0 auto; height:60px; text-decoration:none; color:#000; background:#f4f4f4; font-weight:500; font-size:20px; line-height:60px; letter-spacing:0.05em; text-transform:uppercase; text-align:center; transition:background 0.2s, color 0.2s}
+.main-catalogue-list-auth+.main-catalogue-all a {width:740px}
 .main-catalogue-all a:hover {color:#fff; background:#000}
 .main-catalogue-all a span:nth-child(2) {display:none}
 .main-catalogue.open .main-catalogue-all a span:nth-child(1) {display:none}
@@ -457,10 +459,10 @@ header {height:80px; background:#f7f7f7}
 .bonus-history-list-row-title {display:table-cell; vertical-align:middle; padding:13px 20px; border-top:10px solid #fff; height:80px; background:#f3faf2}
 .bonus-history-list-row-value {display:table-cell; vertical-align:middle; padding:13px 20px; border-top:10px solid #fff; width:115px; height:80px; font-weight:bold; background:#f3faf2}
 .bonus-history-list-row-balance {display:table-cell; vertical-align:middle; padding:13px 20px; border-top:10px solid #fff; width:120px; height:80px; background:#f3faf2}
-.bonus-history-list-row.inverse .bonus-history-list-row-date,
-.bonus-history-list-row.inverse .bonus-history-list-row-title,
-.bonus-history-list-row.inverse .bonus-history-list-row-value,
-.bonus-history-list-row.inverse .bonus-history-list-row-balance {background:#fff2ed}
+.bonus-history-list-row.bonus-history-row-down .bonus-history-list-row-date,
+.bonus-history-list-row.bonus-history-row-down .bonus-history-list-row-title,
+.bonus-history-list-row.bonus-history-row-down .bonus-history-list-row-value,
+.bonus-history-list-row.bonus-history-row-down .bonus-history-list-row-balance {background:#fff2ed}
 .bonus-history-more {display:none; margin:20px 0 0 0; font-weight:500; font-size:14px; line-height:21px; letter-spacing:0.05em; text-transform:uppercase}
 .bonus-history-more.visible {display:block}
 .bonus-history-more a {text-decoration:none; color:#9e9e9e; border-bottom:1px dashed #9e9e9e; transition:border-color 0.2s}
@@ -507,6 +509,8 @@ header {height:80px; background:#f7f7f7}
 
 .orders {margin:40px 0 0 0}
 .orders-item {margin:20px 0 0 0; padding:30px 20px 22px 20px; background:#fafafa; border:1px solid #f7f7f7}
+.orders-item:nth-child(n+4) {display:none}
+.orders-item:nth-child(n+4).visible {display:block}
 .orders-item h3 {margin:0}
 .orders-item-status {margin:24px 0 0 0; padding:0 0 0 18px; border-left:2px solid #000; font-size:16px; line-height:19px; font-style:italic; font-weight:300}
 .orders-item-status-1 {border-left-color:#ff5d44}
@@ -531,9 +535,13 @@ header {height:80px; background:#f7f7f7}
 .order-item-delivery-notice {margin:24px 0 0 0; line-height:19px; font-weight:300; font-style:italic}
 .order-item-delivery-notice a {font-weight:bold; text-decoration:none; color:#000; transition:color 0.2s}
 .order-item-delivery-notice a:hover {color:#ff5d44}
-.orders-more {margin:40px 0 0 0}
-.orders-more a {display:block; margin:0 auto; height:60px; text-decoration:none; color:#000; background:#fafafa; font-weight:500; font-size:20px; line-height:60px; letter-spacing:0.05em; text-transform:uppercase; text-align:center; transition:background 0.2s, color 0.2s}
+.orders-more {display:none; margin:40px 0 0 0}
+.orders-more.visible {display:block}
+.orders-more a {display:block; margin:0 auto; height:60px; text-decoration:none; color:#000; background:#f4f4f4; font-weight:500; font-size:20px; line-height:60px; letter-spacing:0.05em; text-transform:uppercase; text-align:center; transition:background 0.2s, color 0.2s}
 .orders-more a:hover {color:#fff; background:#000}
+.orders-more a span:nth-child(2) {display:none}
+.orders-more.view-all a span:nth-child(1) {display:none}
+.orders-more.view-all a span:nth-child(2) {display:inline}
 
 .back-link-auth {margin:40px 0 0 0}
 .back-link-auth a {display:inline-block; vertical-align:top; height:40px; padding:0 15px; background:#907762; line-height:40px; text-decoration:none; font-size:16px; text-transform:uppercase; transition:background 0.2s; color:#fff}
@@ -559,7 +567,7 @@ header {height:80px; background:#f7f7f7}
 .rules {margin:42px 0 0 0}
 .rules-item {margin:20px 0 0 0; background:#fafafa}
 .rules-item-title {display:block; position:relative; padding:24px 64px 24px 20px; text-decoration:none; color:#000; font-weight:500; font-size:20px; line-height:22px; transition:background 0.2s}
-.rules-item-title:hover {background:#d3d3d3}
+.rules-item-title:hover {background:#f1f1f1}
 .rules-item-title svg {display:block; position:absolute; right:20px; top:24px; width:24px; height:24px; fill:none; stroke:#000; transition:transform 0.2s}
 .rules-item.open .rules-item-title svg {transform:rotate(-180deg)}
 .rules-item-content {display:none; padding:20px; border-top:1px solid #ff5d44}
@@ -591,7 +599,7 @@ header {height:80px; background:#f7f7f7}
 .page-main .main-header .back-link {position:absolute; left:20px; bottom:0}
 
 .page-404 .main-header {height:110px}
-.page-404-icon {text-align:center; margin:100px 0 0 0; line-height:0}
+.page-404-icon {text-align:center; margin:calc(50vh - 287px) 0 0 0; line-height:0}
 .page-404-title {text-align:center; margin:19px 0 0 0; font-weight:bold; font-size:100px; line-height:130px; letter-spacing:0.05em; color:#fff; text-shadow:2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000}
 .fonts-loaded .page-404-title {font-family:Oswald, sans-serif}
 .page-404-text {text-align:center; font-weight:500; font-size:48px; line-height:62px; letter-spacing:0.05em; text-transform:uppercase}
@@ -615,6 +623,8 @@ header {height:80px; background:#f7f7f7}
 .catalogue-filter form {margin:0; padding:0}
 .catalogue-filter-field {float:left; width:50%; padding:0 10px}
 .catalogue-filter-field .form-input {margin:0}
+.catalogue-filter-field .form-input input {font-size:18px}
+.catalogue-filter-field .select2-container {font-size:18px}
 .form-input-search input {padding-right:54px}
 .form-input-search svg {display:block; position:absolute; right:15px; top:19px; width:24px; height:24px; fill:#000; pointer-events:none}
 .catalogue-filter-field .form-select {margin:0}
@@ -624,7 +634,7 @@ header {height:80px; background:#f7f7f7}
 .main-catalogue-list-cabinet .main-catalogue-item:nth-child(n+5) {position:relative; left:auto; top:auto}
 .main-catalogue-list-cabinet .main-catalogue-item-btn {border-top:1px solid #000; padding:20px 0 0 0}
 .main-catalogue-list-cabinet .main-catalogue-item-btn span {position:relative; top:27px; transform:translateY(-50%); margin:0; text-transform:uppercase; letter-spacing:0.05em}
-.main-catalogue-list-cabinet .main-catalogue-item-btn em {display:block; font-style:normal; text-transform:none; margin:-4px 0 0 0; letter-spacing:0; color:#b3b3b3; font-weight:normal}
+.main-catalogue-list-cabinet .main-catalogue-item-btn em {display:block; font-style:normal; text-transform:none; margin:-4px 0 0 0; letter-spacing:0; color:#8c8c8c; font-size:16px; font-weight:100}
 .main-catalogue-item-count {float:right; padding:0 8px 0 0; height:54px; background:#ff5d44; color:#fff; position:relative}
 .main-catalogue-item-count::after {content:""; display:block; clear:both}
 .catalogue-in-cart {display:block; position:absolute; left:-39px; top:15px; width:24px; height:24px; fill:#ff5d44}

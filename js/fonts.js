@@ -15,6 +15,9 @@ window.onload = function() {
         script.async = true;
 
         script.onload = function () {
+            var Roboto100 = new FontFaceObserver('Roboto', {
+                weight: '100'
+            });
             var Roboto300 = new FontFaceObserver('Roboto', {
                 weight: '300'
             });
@@ -55,6 +58,7 @@ window.onload = function() {
             });
 
             Promise.all([
+                Roboto100.load(),
                 Roboto300.load(),
                 Roboto300i.load(),
                 Roboto400.load(),

@@ -44,11 +44,18 @@ header {background:#f4f4f4}
 .supervizor-main-saloons-count {position:absolute; left:30px; bottom:20px; font-size:36px; line-height:54px; letter-spacing:0.05em; text-transform:uppercase}
 .supervizor-main-saloons-count span {font-weight:bold}
 .supervizor-main-saloons svg {display:block; width:26px; height:16px; position:absolute; right:30px; bottom:40px; fill:#fff}
-.supervizor-main-links {margin:40px 0 0 30px; font-size:24px; line-height:36px; letter-spacing:0.05em; text-transform:uppercase}
+.supervizor-main-links {margin:20px 0 0 0; font-weight:500; font-size:18px; line-height:61px; letter-spacing:0.05em; text-transform:uppercase}
 .supervizor-main-link {margin:20px 0 0 0}
-.supervizor-main-link a {color:#000; text-decoration:none}
-.supervizor-main-link a svg {display:inline-block; vertical-align:middle; width:26px; height:16px; margin:-2px 0 0 15px; fill:#000; transition:transform 0.2s}
-.supervizor-main-link a:hover svg {transform:translateX(5px)}
+.supervizor-main-link a {display:block; color:#ff5d44; text-decoration:none; border:2px solid #ff5d44; height:65px; transition:color 0.2s, background 0.2s, border-color 0.2s; padding:0 0 0 33px; position:relative}
+.supervizor-main-link a:hover {color:#fff; background:#000; border-color:#000}
+.supervizor-main-link a svg {display:inline-block; vertical-align:middle; fill:#ff5d44; transition:fill 0.2s}
+.supervizor-main-link a:hover svg {fill:#fff}
+.supervizor-main-link a svg.supervizor-main-link-icon {width:24px; height:24px; margin:-2px 10px 0 0}
+.supervizor-main-link a svg.supervizor-main-link-arrow {display:block; position:absolute; right:33px; top:50%; margin-top:-8px; width:26px; height:16px; fill:#ff5d44; transition:fill 0.2s}
+.supervizor-main-links-indola .supervizor-main-link a {border-color:#2b7de2; color:#2b7de2}
+.supervizor-main-links-indola .supervizor-main-link a:hover {color:#fff; background:#000; border-color:#000}
+.supervizor-main-links-indola .supervizor-main-link a svg {fill:#2b7de2}
+.supervizor-main-links-indola .supervizor-main-link a:hover svg {fill:#fff}
 
 .back-link-auth a {background:#f4f4f4; color:#000; transition:background 0.2s, color 0.2s}
 .back-link-auth a:hover {background:#000; color:#fff}
@@ -153,7 +160,7 @@ header {background:#f4f4f4}
 .supervizor-saloons-list-header {display:table-cell; vertical-align:top; padding:0 16px}
 .supervizor-saloons-list-row {display:table-row; cursor:pointer}
 .supervizor-saloons-list-cell {display:table-cell; vertical-align:middle; height:60px; padding:11px 16px; font-size:16px; line-height:19px; background:#fafafa; transition:background 0.2s}
-.supervizor-saloons-list-row:hover .supervizor-saloons-list-cell {background:#d3d3d3}
+.supervizor-saloons-list-row:hover .supervizor-saloons-list-cell {background:#f4f4f4}
 
 .window-saloon {width:822px}
 
@@ -180,6 +187,12 @@ header {background:#f4f4f4}
 .catalogue-item-btn {margin:10px 0 0 0; border-top:1px solid #d1d1d1; padding:37px 0 0 0; font-weight:bold; font-size:16px; line-height:24px; letter-spacing:0.05em; text-transform:uppercase}
 
 .analytics-data {margin:40px 0 0 0; position:relative; overflow:auto}
+.analytics-data .mCSB_horizontal.mCSB_inside > .mCSB_container {margin:0 0 45px 0}
+.analytics-data .mCSB_scrollTools.mCSB_scrollTools_horizontal {height:5px}
+.analytics-data .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {margin:0; height:5px}
+.analytics-data .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {background:#ff5d44}
+.analytics-data .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {margin:0; height:5px}
+.analytics-data .mCSB_scrollTools .mCSB_draggerRail {background:#fafafa}
 .analytics-data-inner {display:inline-block; vertical-align:top}
 .wrapper .analytics-data-inner table {margin:0; table-layout:fixed}
 .wrapper .analytics-data-inner th {vertical-align:top; padding:0; font-weight:500; font-size:8px; line-height:12px; text-align:left}
@@ -190,22 +203,22 @@ header {background:#f4f4f4}
 .wrapper .analytics-data-inner tbody tr:last-child td {border-bottom:1px solid #d1d1d1}
 .wrapper .analytics-data-inner tbody tr:hover td {background:#f4f4f4}
 
-.wrapper .analytics-data-inner th.analytics-data-header-top {padding:0 0 10px 0}
+.wrapper .analytics-data-inner th.analytics-data-header-top {padding:0 0 10px 0; font-size:9px}
 .wrapper .analytics-data-inner th.analytics-data-header {color:#9e9e9e; padding:17px 0 7px 0; height:48px; text-align:center}
 .wrapper .analytics-data-inner th.analytics-data-header-id {width:34px; padding-right:5px; text-align:left}
 .wrapper .analytics-data-inner th.analytics-data-header-name {width:160px; padding-right:10px; text-align:left}
 .wrapper .analytics-data-inner th.analytics-data-header-level-start {width:86px; padding-right:10px; text-align:center}
-.wrapper .analytics-data-inner th.analytics-data-header-q-month {width:55px; background:#fafafa; padding-right:5px; text-align:center; position:relative}
+.wrapper .analytics-data-inner th.analytics-data-header-q-month {width:55px; background:#fafafa; padding-right:5px; text-align:center; position:relative; border-top:1px solid #ff5d44}
 .wrapper .analytics-data-inner th.analytics-data-header-q-month::after {content:""; display:block; position:absolute; right:0; top:0; bottom:0; width:5px; background:#fff}
-.wrapper .analytics-data-inner th.analytics-data-header-q-summ {width:55px; background:#fafafa; padding-right:5px; text-align:center; position:relative}
+.wrapper .analytics-data-inner th.analytics-data-header-q-summ {width:55px; background:#fafafa; padding-right:5px; text-align:center; position:relative; border-top:1px solid #ff5d44}
 .wrapper .analytics-data-inner th.analytics-data-header-q-summ::after {content:""; display:block; position:absolute; right:0; top:0; bottom:0; width:5px; background:#fff}
-.wrapper .analytics-data-inner th.analytics-data-header-q-level {width:95px; background:#fafafa; padding-right:10px; text-align:center; position:relative}
-.wrapper .analytics-data-inner th.analytics-data-header-q-level::after {content:""; display:block; position:absolute; right:0; top:0; bottom:0; width:10px; background:#fff}
+.wrapper .analytics-data-inner th.analytics-data-header-q-level {width:95px; background:#fafafa; padding-right:10px; text-align:center; position:relative; border-top:1px solid #ff5d44}
+.wrapper .analytics-data-inner th.analytics-data-header-q-level::after {content:""; display:block; position:absolute; right:0; top:-1px; bottom:0; width:10px; background:#fff}
 .wrapper .analytics-data-inner th.analytics-data-header-volume {width:65px; padding-right:10px; text-align:center}
 .wrapper .analytics-data-inner th.analytics-data-header-received {width:65px; padding-right:10px; text-align:center}
 .wrapper .analytics-data-inner th.analytics-data-header-spent {width:65px; padding-right:10px; text-align:center}
 .wrapper .analytics-data-inner th.analytics-data-header-account {width:55px; text-align:center}
-.wrapper .analytics-data-inner tr.analytics-data-columns th.analytics-data-header {padding:0; font-size:0; line-height:0; height:0; overflow:hidden}
+.wrapper .analytics-data-inner tr.analytics-data-columns th.analytics-data-header {padding:0; font-size:0; line-height:0; height:0; overflow:hidden; border-top:none}
 .wrapper .analytics-data-inner td.analytics-data-cell-id {width:34px; padding-right:5px; font-size:10px; line-height:15px; font-weight:500; color:#9e9e9e; letter-spacing:0.05em}
 .wrapper .analytics-data-inner td.analytics-data-cell-name {width:160px; padding-right:10px; font-size:13px; line-height:14px}
 .wrapper .analytics-data-inner td.analytics-data-cell-name a {text-decoration:none}

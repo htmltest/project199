@@ -53,6 +53,10 @@ $(document).ready(function() {
         updateSupervizorSaloonsFilterStatus();
     });
 
+    $('.analytics-data').mCustomScrollbar({
+        axis: 'x'
+    });
+
 });
 
 $(window).on('load resize', function() {
@@ -108,3 +112,24 @@ function updateSupervizorSaloonsFilterStatus() {
 
     $('.supervizor-saloons-filter-status-current span').html(newText);
 }
+
+$(window).on('load resize scroll', function() {
+    var windowScroll = $(window).scrollTop();
+    $('body').append('<div id="body-test-height" style="position:fixed; left:0; top:0; right:0; bottom:0; z-index:-1"></div>');
+    var windowHeight = $('#body-test-height').height();
+    $('#body-test-height').remove();
+
+    $('.analytics-data .mCSB_scrollTools').each(function() {
+        var curTools = $(this);
+        var curBlock = curTools.parent();
+        if (windowScroll + windowHeight > curBlock.offset().top) {
+            var curBottom = (windowScroll + windowHeight) - (curBlock.offset().top + curBlock.height() - 5);
+            if (curBottom < 5) {
+                curBottom = 5;
+            }
+            curTools.css({'position': 'fixed', 'z-index': 2, 'left': curBlock.offset().left, 'bottom': curBottom, 'right': 'auto', 'width': curBlock.width()});
+        } else {
+            curTools.css({'position': 'absolute', 'left': 0, 'bottom': 0, 'right': '0', 'width': 'auto'});
+        }
+    });
+});

@@ -112,7 +112,7 @@ form.loading::after {background-image:url(../images/loading-indola.svg) no-repea
 .fonts-loaded .main-rules-link a {font-family:Montserrat, sans-serif}
 .main-rules-link a:hover {background:rgba(225, 231, 251, 0.8)}
 
-.main-title {font-weight:bold; font-size:80px; line-height:88px; letter-spacing:0; text-transform:none; color:#000; text-shadow:none; text-align:center}
+.main-title {font-weight:bold; font-size:80px; line-height:88px; letter-spacing:0; text-transform:none; color:#000; text-align:center; -webkit-text-stroke:none; -webkit-text-fill-color:#000}
 .fonts-loaded .main-title {font-family:Montserrat, sans-serif}
 
 .main-faq {margin:140px 0 0 0}
