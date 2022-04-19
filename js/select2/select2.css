@@ -91,7 +91,7 @@
 .select2-container--default .select2-results > .select2-results__options {max-height:450px; overflow-y:auto}
 
 .select2-container--default .select2-results__option[aria-disabled=true] {color:#000}
-.select2-container--default .select2-results__option[aria-selected=true] {color:#000; background-color:#bfbfbf}
+.select2-container--default .select2-results__option[aria-selected=true] {color:#000; background-color:#f4f4f4}
 .select2-results__option[aria-selected="true"]::after {opacity:1}
 
-.select2-container--default .select2-results__option--highlighted[aria-selected] {background:#bfbfbf; z-index:1}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {background:#f4f4f4; z-index:1}

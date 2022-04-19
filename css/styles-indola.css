@@ -36,6 +36,11 @@ form.loading::after {background-image:url(../images/loading-indola.svg) no-repea
 .form-radio input:checked+span::after,
 .form-radio input:checked+label.error+span::after {background:#3c476b}
 
+.form-file-input span {color:#3c476b; border-color:#3c476b}
+.form-file-input:hover span {color:#fff; border-color:#000}
+.form-file-input span svg {fill:#3c476b}
+.form-file-input:hover span svg {fill:#fff}
+
 .pager a,
 .pager span {color:#3c476b}
 .pager a:hover {color:#3c476b}

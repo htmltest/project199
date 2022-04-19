@@ -11,6 +11,19 @@ $(document).ready(function() {
         this.style.height = (this.scrollHeight) + 'px';
     });
 
+    $('body').on('change', '.form-file input', function() {
+        var curInput = $(this);
+        var curField = curInput.parents().filter('.form-file');
+        var curName = curInput.val().replace(/.*(\/|\\)/, '');
+        if (curName != '') {
+            curField.find('.form-file-title').html(curName);
+            curField.find('input').removeClass('error');
+            curField.find('label.error').remove();
+        } else {
+            curField.find('.form-file-title').html('');
+        }
+    });
+
     $('form').each(function() {
         initForm($(this));
     });
@@ -218,6 +231,11 @@ function initForm(curForm) {
         }
 
         curSelect.select2(options);
+
+        curSelect.on('select2:select', function(e) {
+            curSelect.parent().find('select.error').removeClass('error');
+            curSelect.parent().find('label.error').remove();
+        });
     });
 
     curForm.validate({

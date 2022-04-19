@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Stay Loyal</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/select2/select2.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="css/styles-indola.css" />
+        <link rel="stylesheet" href="css/styles-supervizor.css" />
+        <link rel="stylesheet" href="css/styles-supervizor-indola.css" />
+        <link rel="stylesheet" href="css/styles-admin.css" />
+        <link rel="stylesheet" href="css/styles-admin-indola.css" />
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=1200" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <header>
+                    <div class="container">
+
+                        <div class="logos">
+                            <div class="logo-stayloyal"><a href="#"><img src="images/logo-stayloyal-white.svg" alt="" /></a></div>
+                            <div class="logo-indola"><img src="images/logo-indola-white.svg" alt="" /></div>
+                        </div>
+
+                        <div class="header-btns">
+                            <a href="#"><svg class="header-logout"><use xlink:href="images/sprite.svg#header-logout"></use></svg></a>
+                        </div>
+
+                        <div class="header-user">
+                            <a href="#">
+                                <strong><svg><use xlink:href="images/sprite.svg#header-user-edit"></use></svg></strong>
+                                <span>Администратор Елена Сафроненко</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </header>
+
+                <!-- container -->
+                <div class="container">
+
+                    <div class="back-link-auth"><a href="#"><svg><use xlink:href="images/sprite.svg#back-link-auth"></use></svg>На главную</a></div>
+
+                    <div class="supervizor-saloons">
+                        <div class="supervizor-saloons-header">
+                            <h1>Отчет по заказам</h1>
+                            <div class="supervizor-saloons-filter-link"><a href="#" class="btn"><svg><use xlink:href="images/sprite.svg#filter-link"></use></svg><svg><use xlink:href="images/sprite.svg#filter-close"></use></svg></a></div>
+                        </div>
+
+                        <div class="supervizor-saloons-filter">
+                            <form action="#" method="post">
+                                <div class="supervizor-saloons-filter-row">
+                                    <div class="supervizor-saloons-filter-field">
+                                        <div class="form-label">номер заказа</div>
+                                        <div class="form-input"><input type="text" name="order" value="" /></div>
+                                    </div>
+                                    <div class="supervizor-saloons-filter-field">
+                                        <div class="form-label">название салона</div>
+                                        <div class="form-input"><input type="text" name="saloon" value="" /></div>
+                                    </div>
+                                    <div class="supervizor-saloons-filter-submit">
+                                        <input type="submit" value="найти" class="btn-border" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- report -->
+                        <div class="report">
+
+                            <div class="report-headers">
+                                <div class="report-header report-header-order">Заказ</div>
+                                <div class="report-header report-header-saloon">Салон</div>
+                                <div class="report-header report-header-contact">Контактное лицо</div>
+                                <div class="report-header report-header-cost">Стоимость</div>
+                                <div class="report-header report-header-status">Статус</div>
+                                <div class="report-header report-header-content">Состав</div>
+                            </div>
+
+                            <!-- report item -->
+                            <div class="report-item">
+                                <div class="report-item-header">
+                                    <div class="report-item-header-order">№ 882<span>от 29.10.2015</span></div>
+                                    <div class="report-item-header-saloon"><a href="windows/saloon.html" class="window-link">Салон Красоты Комплимент</a></div>
+                                    <div class="report-item-header-contact">Елена<span>8 921 326-38-91</span></div>
+                                    <div class="report-item-header-cost"><strong>9570</strong> баллов</div>
+                                    <div class="report-item-header-status"><span class="order-status-1">Новый</span></div>
+                                    <div class="report-item-header-content"><a href="#"><svg><use xlink:href="images/sprite.svg#report-header-arrow"></use></svg></a></div>
+                                </div>
+                                <div class="report-item-content">
+                                    <div class="report-item-content-address"><span>Адрес доставки:</span><svg><use xlink:href="images/sprite.svg#order-delivery-address"></use></svg>Республика Карелия, Петрозаводск, Чкалова, 45</div>
+                                    <div class="report-item-content-list">
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка для стрижки аккумуляторная MOSER Li+Pro Min</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">11 090</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка MOSER EasyStyle</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">10 490</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST Фольга серебристая (550 м)</span></div>
+                                            <div class="report-item-content-list-item-count">5 шт</div>
+                                            <div class="report-item-content-list-item-bonus">6 820</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST зажим «Аллигатор» для волос</span></div>
+                                            <div class="report-item-content-list-item-count">15 шт</div>
+                                            <div class="report-item-content-list-item-bonus">410</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Миска для красящей смеси</span></div>
+                                            <div class="report-item-content-list-item-count">7 шт</div>
+                                            <div class="report-item-content-list-item-bonus">80</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг Черный S</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">330</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг S</span></div>
+                                            <div class="report-item-content-list-item-count">4 шт</div>
+                                            <div class="report-item-content-list-item-bonus">200</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Щётка для фена</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">340</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- report item END -->
+
+                            <!-- report item -->
+                            <div class="report-item">
+                                <div class="report-item-header">
+                                    <div class="report-item-header-order">№ 877<span>от 27.10.2015</span></div>
+                                    <div class="report-item-header-saloon"><a href="windows/saloon.html" class="window-link">ООО «Студия Ланж»</a></div>
+                                    <div class="report-item-header-contact">Елена<span>8 921 326-38-91</span></div>
+                                    <div class="report-item-header-cost"><strong>9570</strong> баллов</div>
+                                    <div class="report-item-header-status"><span class="order-status-2">В обработке</span></div>
+                                    <div class="report-item-header-content"><a href="#"><svg><use xlink:href="images/sprite.svg#report-header-arrow"></use></svg></a></div>
+                                </div>
+                                <div class="report-item-content">
+                                    <div class="report-item-content-address"><span>Адрес доставки:</span><svg><use xlink:href="images/sprite.svg#order-delivery-address"></use></svg>Республика Карелия, Петрозаводск, Чкалова, 45</div>
+                                    <div class="report-item-content-list">
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка для стрижки аккумуляторная MOSER Li+Pro Min</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">11 090</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка MOSER EasyStyle</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">10 490</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST Фольга серебристая (550 м)</span></div>
+                                            <div class="report-item-content-list-item-count">5 шт</div>
+                                            <div class="report-item-content-list-item-bonus">6 820</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST зажим «Аллигатор» для волос</span></div>
+                                            <div class="report-item-content-list-item-count">15 шт</div>
+                                            <div class="report-item-content-list-item-bonus">410</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Миска для красящей смеси</span></div>
+                                            <div class="report-item-content-list-item-count">7 шт</div>
+                                            <div class="report-item-content-list-item-bonus">80</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг Черный S</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">330</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг S</span></div>
+                                            <div class="report-item-content-list-item-count">4 шт</div>
+                                            <div class="report-item-content-list-item-bonus">200</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Щётка для фена</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">340</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- report item END -->
+
+                            <!-- report item -->
+                            <div class="report-item">
+                                <div class="report-item-header">
+                                    <div class="report-item-header-order">№ 882<span>от 29.10.2015</span></div>
+                                    <div class="report-item-header-saloon"><a href="windows/saloon.html" class="window-link">Салон Красоты Комплимент</a></div>
+                                    <div class="report-item-header-contact">Елена<span>8 921 326-38-91</span></div>
+                                    <div class="report-item-header-cost"><strong>9570</strong> баллов</div>
+                                    <div class="report-item-header-status"><span class="order-status-3">На отгрузке</span></div>
+                                    <div class="report-item-header-content"><a href="#"><svg><use xlink:href="images/sprite.svg#report-header-arrow"></use></svg></a></div>
+                                </div>
+                                <div class="report-item-content">
+                                    <div class="report-item-content-address"><span>Адрес доставки:</span><svg><use xlink:href="images/sprite.svg#order-delivery-address"></use></svg>Республика Карелия, Петрозаводск, Чкалова, 45</div>
+                                    <div class="report-item-content-list">
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка для стрижки аккумуляторная MOSER Li+Pro Min</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">11 090</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка MOSER EasyStyle</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">10 490</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST Фольга серебристая (550 м)</span></div>
+                                            <div class="report-item-content-list-item-count">5 шт</div>
+                                            <div class="report-item-content-list-item-bonus">6 820</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST зажим «Аллигатор» для волос</span></div>
+                                            <div class="report-item-content-list-item-count">15 шт</div>
+                                            <div class="report-item-content-list-item-bonus">410</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Миска для красящей смеси</span></div>
+                                            <div class="report-item-content-list-item-count">7 шт</div>
+                                            <div class="report-item-content-list-item-bonus">80</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг Черный S</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">330</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг S</span></div>
+                                            <div class="report-item-content-list-item-count">4 шт</div>
+                                            <div class="report-item-content-list-item-bonus">200</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Щётка для фена</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">340</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- report item END -->
+
+                            <!-- report item -->
+                            <div class="report-item">
+                                <div class="report-item-header">
+                                    <div class="report-item-header-order">№ 877<span>от 27.10.2015</span></div>
+                                    <div class="report-item-header-saloon"><a href="windows/saloon.html" class="window-link">ООО «Студия Ланж»</a></div>
+                                    <div class="report-item-header-contact">Елена<span>8 921 326-38-91</span></div>
+                                    <div class="report-item-header-cost"><strong>9570</strong> баллов</div>
+                                    <div class="report-item-header-status"><span class="order-status-4">Отгружен</span></div>
+                                    <div class="report-item-header-content"><a href="#"><svg><use xlink:href="images/sprite.svg#report-header-arrow"></use></svg></a></div>
+                                </div>
+                                <div class="report-item-content">
+                                    <div class="report-item-content-address"><span>Адрес доставки:</span><svg><use xlink:href="images/sprite.svg#order-delivery-address"></use></svg>Республика Карелия, Петрозаводск, Чкалова, 45</div>
+                                    <div class="report-item-content-list">
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка для стрижки аккумуляторная MOSER Li+Pro Min</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">11 090</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка MOSER EasyStyle</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">10 490</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST Фольга серебристая (550 м)</span></div>
+                                            <div class="report-item-content-list-item-count">5 шт</div>
+                                            <div class="report-item-content-list-item-bonus">6 820</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST зажим «Аллигатор» для волос</span></div>
+                                            <div class="report-item-content-list-item-count">15 шт</div>
+                                            <div class="report-item-content-list-item-bonus">410</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Миска для красящей смеси</span></div>
+                                            <div class="report-item-content-list-item-count">7 шт</div>
+                                            <div class="report-item-content-list-item-bonus">80</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг Черный S</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">330</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг S</span></div>
+                                            <div class="report-item-content-list-item-count">4 шт</div>
+                                            <div class="report-item-content-list-item-bonus">200</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Щётка для фена</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">340</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- report item END -->
+
+                            <!-- report item -->
+                            <div class="report-item">
+                                <div class="report-item-header">
+                                    <div class="report-item-header-order">№ 882<span>от 29.10.2015</span></div>
+                                    <div class="report-item-header-saloon"><a href="windows/saloon.html" class="window-link">Салон Красоты Комплимент</a></div>
+                                    <div class="report-item-header-contact">Елена<span>8 921 326-38-91</span></div>
+                                    <div class="report-item-header-cost"><strong>9570</strong> баллов</div>
+                                    <div class="report-item-header-status"><span class="order-status-5">Доставлен</span></div>
+                                    <div class="report-item-header-content"><a href="#"><svg><use xlink:href="images/sprite.svg#report-header-arrow"></use></svg></a></div>
+                                </div>
+                                <div class="report-item-content">
+                                    <div class="report-item-content-address"><span>Адрес доставки:</span><svg><use xlink:href="images/sprite.svg#order-delivery-address"></use></svg>Республика Карелия, Петрозаводск, Чкалова, 45</div>
+                                    <div class="report-item-content-list">
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка для стрижки аккумуляторная MOSER Li+Pro Min</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">11 090</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка MOSER EasyStyle</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">10 490</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST Фольга серебристая (550 м)</span></div>
+                                            <div class="report-item-content-list-item-count">5 шт</div>
+                                            <div class="report-item-content-list-item-bonus">6 820</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST зажим «Аллигатор» для волос</span></div>
+                                            <div class="report-item-content-list-item-count">15 шт</div>
+                                            <div class="report-item-content-list-item-bonus">410</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Миска для красящей смеси</span></div>
+                                            <div class="report-item-content-list-item-count">7 шт</div>
+                                            <div class="report-item-content-list-item-bonus">80</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг Черный S</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">330</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг S</span></div>
+                                            <div class="report-item-content-list-item-count">4 шт</div>
+                                            <div class="report-item-content-list-item-bonus">200</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Щётка для фена</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">340</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- report item END -->
+
+                            <!-- report item -->
+                            <div class="report-item">
+                                <div class="report-item-header">
+                                    <div class="report-item-header-order">№ 877<span>от 27.10.2015</span></div>
+                                    <div class="report-item-header-saloon"><a href="windows/saloon.html" class="window-link">ООО «Студия Ланж»</a></div>
+                                    <div class="report-item-header-contact">Елена<span>8 921 326-38-91</span></div>
+                                    <div class="report-item-header-cost"><strong>9570</strong> баллов</div>
+                                    <div class="report-item-header-status"><span class="order-status-6">Отменен</span></div>
+                                    <div class="report-item-header-content"><a href="#"><svg><use xlink:href="images/sprite.svg#report-header-arrow"></use></svg></a></div>
+                                </div>
+                                <div class="report-item-content">
+                                    <div class="report-item-content-address"><span>Адрес доставки:</span><svg><use xlink:href="images/sprite.svg#order-delivery-address"></use></svg>Республика Карелия, Петрозаводск, Чкалова, 45</div>
+                                    <div class="report-item-content-list">
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка для стрижки аккумуляторная MOSER Li+Pro Min</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">11 090</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Машинка MOSER EasyStyle</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">10 490</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST Фольга серебристая (550 м)</span></div>
+                                            <div class="report-item-content-list-item-count">5 шт</div>
+                                            <div class="report-item-content-list-item-bonus">6 820</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>ST зажим «Аллигатор» для волос</span></div>
+                                            <div class="report-item-content-list-item-count">15 шт</div>
+                                            <div class="report-item-content-list-item-bonus">410</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Миска для красящей смеси</span></div>
+                                            <div class="report-item-content-list-item-count">7 шт</div>
+                                            <div class="report-item-content-list-item-bonus">80</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг Черный S</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">330</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Термобрашинг S</span></div>
+                                            <div class="report-item-content-list-item-count">4 шт</div>
+                                            <div class="report-item-content-list-item-bonus">200</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                        <div class="report-item-content-list-item">
+                                            <div class="report-item-content-list-item-name"><span>Щётка для фена</span></div>
+                                            <div class="report-item-content-list-item-count">1 шт</div>
+                                            <div class="report-item-content-list-item-bonus">340</div>
+                                            <div class="report-item-content-list-item-bonus-unit">баллов</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- report item END -->
+
+                        </div>
+                        <!-- report END -->
+
+                        <div class="pager">
+                            <a href="#" class="pager-prev"><svg><use xlink:href="images/sprite.svg#pager-prev"></use></svg></a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <span>...</span>
+                            <a href="#">12</a>
+                            <a href="#">13</a>
+                            <a href="#">14</a>
+                            <a href="#" class="pager-next"><svg><use xlink:href="images/sprite.svg#pager-next"></use></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="back-link-auth"><a href="#"><svg><use xlink:href="images/sprite.svg#back-link-auth"></use></svg>На главную</a></div>
+
+                </div>
+                <!-- container END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="container">
+
+                <div class="footer-container">
+
+                    <div class="footer-copyrights">© 2010—2022 STAY_LOYAL</div>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <a href="#" class="up-link"><svg><use xlink:href="images/sprite.svg#up-link"></use></svg></a>
+
+        <script>
+            var pathTemplate = './';
+        </script>
+        <script src="js/fonts.js"></script>
+
+        <script src="js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/tools.js"></script>
+        <script src="js/tools-supervizor.js"></script>
+
+    </body>
+</html>

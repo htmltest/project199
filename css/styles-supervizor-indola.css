@@ -4,6 +4,11 @@ a {color:#2b7de2}
 .btn:hover {color:#fff; background:#000}
 .btn:disabled {background:#fafafa; color:#bfbfbf}
 
+.form-file-input span {color:#2b7de2; border-color:#2b7de2}
+.form-file-input:hover span {color:#fff; border-color:#000}
+.form-file-input span svg {fill:#2b7de2}
+.form-file-input:hover span svg {fill:#fff}
+
 .pager a,
 .pager span {color:#373737}
 .pager a:hover {color:#2b7de2}

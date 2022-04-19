@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Stay Loyal</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/select2/select2.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="css/styles-indola.css" />
+        <link rel="stylesheet" href="css/styles-supervizor.css" />
+        <link rel="stylesheet" href="css/styles-supervizor-indola.css" />
+        <link rel="stylesheet" href="css/styles-admin.css" />
+        <link rel="stylesheet" href="css/styles-admin-indola.css" />
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=1200" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <header>
+                    <div class="container">
+
+                        <div class="logos">
+                            <div class="logo-stayloyal"><a href="#"><img src="images/logo-stayloyal-white.svg" alt="" /></a></div>
+                            <div class="logo-indola"><img src="images/logo-indola-white.svg" alt="" /></div>
+                        </div>
+
+                        <div class="header-btns">
+                            <a href="#"><svg class="header-logout"><use xlink:href="images/sprite.svg#header-logout"></use></svg></a>
+                        </div>
+
+                        <div class="header-user">
+                            <a href="#">
+                                <strong><svg><use xlink:href="images/sprite.svg#header-user-edit"></use></svg></strong>
+                                <span>Администратор Елена Сафроненко</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </header>
+
+                <!-- container -->
+                <div class="container">
+
+                    <div class="back-link-auth"><a href="#"><svg><use xlink:href="images/sprite.svg#back-link-auth"></use></svg>Баллы и закупки</a></div>
+
+                    <h1>Импорт закупок в csv</h1>
+
+                    <div class="import-notice">Вы можете произвести массовый импорт данных по закупкам на конкретный месяц.<br /> Для этого подготовьте CSV с двумя полями:<br /> Код салона в системе PHCLUB; Объем закупок в рублях</div>
+                    <div class="import-form">
+                        <form action="ajax/success.html" method="post" class="ajax-form">
+                            <div class="form-label">Выберите месяц, для которого загружаете данные</div>
+                            <div class="import-form-row">
+                                <div class="form-select">
+                                    <select name="month" data-placeholder="" class="required">
+                                        <option value=""></option>
+                                        <option value="1">Январь</option>
+                                        <option value="2">Февраль</option>
+                                        <option value="3">Март</option>
+                                        <option value="4">Апрель</option>
+                                        <option value="5">Май</option>
+                                        <option value="6">Июнь</option>
+                                        <option value="7">Июль</option>
+                                        <option value="8">Август</option>
+                                        <option value="9">Сентябрь</option>
+                                        <option value="10">Октябрь</option>
+                                        <option value="11">Ноябрь</option>
+                                        <option value="12">Декабрь</option>
+                                    </select>
+                                </div>
+                                <div class="form-file">
+                                    <div class="form-file-input"><input type="file" name="file" class="required" /><span><svg><use xlink:href="images/sprite.svg#form-file"></use></svg>Выбрать файл</span></div>
+                                    <div class="form-file-title"></div>
+                                </div>
+                                <div class="import-form-submit"><input type="submit" value="загрузить" class="btn" /></div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <!-- container END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="container">
+
+                <div class="footer-container">
+
+                    <div class="footer-copyrights">© 2010—2022 STAY_LOYAL</div>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <a href="#" class="up-link"><svg><use xlink:href="images/sprite.svg#up-link"></use></svg></a>
+
+        <script>
+            var pathTemplate = './';
+        </script>
+        <script src="js/fonts.js"></script>
+
+        <script src="js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/tools.js"></script>
+        <script src="js/tools-supervizor.js"></script>
+
+    </body>
+</html>

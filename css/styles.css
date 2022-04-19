@@ -138,6 +138,23 @@ label.error {display:block; margin:2px 0 0 0; font-weight:500; font-size:14px; l
 .form-submit {display:inline-block; vertical-align:top}
 .form-reset {display:inline-block; vertical-align:top; margin:0 20px 0 0}
 
+.form-file {margin:25px 0}
+.form-label+.form-file {margin-top:5px}
+.form-file::after {content:""; display:block; clear:both}
+.form-file-input {float:left; clear:left; position:relative; overflow:hidden; cursor:pointer}
+.form-file-input span {display:inline-block; vertical-align:top; margin:0; padding:13px 18px; overflow:visible; outline:none; text-decoration:none; background:#fff; color:#ff5d44; border:2px solid #ff5d44; border-radius:0; font-size:20px; line-height:30px; letter-spacing:0.05em; text-transform:uppercase; text-align:center; position:relative; -webkit-appearance:none; cursor:pointer; transition:border-color 0.2s, background-color 0.2s, color 0.2s}
+.form-file-input:hover span {color:#fff; background:#000; border-color:#000}
+.form-file-input span svg {display:inline-block; vertical-align:middle; margin:-2px 10px 0 0; width:25px; height:25px; fill:#ff5d44; transition:fill 0.2s}
+.form-file-input:hover span svg {fill:#fff}
+.form-file-input input {height:200px; z-index:1; position:absolute; top:0; right:0; opacity:0; cursor:pointer; font-size:200px; background:url(../images/blank.gif); -webkit-appearance:none}
+.form-file-input input.error+span {margin-bottom:31px; border-color:#ff5d44}
+.form-file-input input.error+label.error+span {margin-bottom:31px; border-color:#ff5d44}
+.form-file-input label.error {position:absolute; right:0; bottom:0; white-space:nowrap}
+.form-file-title {float:left; clear:left; margin:12px 0 0 0; font-size:16px; line-height:21px; padding:0 0 0 29px; position:relative}
+.form-file-title:empty {margin:0}
+.form-file-title::before {content:""; display:block; position:absolute; left:0; top:50%; width:25px; height:24px; margin-top:-12px; background:url(../images/form-file-title.svg) no-repeat}
+.form-file-title:empty::before {display:none}
+
 .pager {margin:60px 0 0 -16px; font-size:0; line-height:0; letter-spacing:-1px}
 .pager a,
 .pager span {display:inline-block; vertical-align:top; width:40px; height:40px; font-weight:normal; font-size:18px; line-height:38px; border:1px solid transparent; color:#373737; text-decoration:none; text-align:center; position:relative; margin:0 2px; transition:border-color 0.2s}
@@ -187,7 +204,8 @@ header {height:80px; background:#f7f7f7}
 .header-user a:hover {color:#ff5d44}
 .header-user svg {float:right; width:40px; height:41px; fill:#000; transition:fill 0.2s}
 .header-user a:hover svg {fill:#ff5d44}
-.header-user span {float:right; margin:0 10px 0 0; max-width:280px; position:relative; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.header-user span {float:right; margin:0 10px 0 0; max-width:280px; position:relative; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:19px; text-align:right}
+.header-user span em {display:block; font-weight:300; margin:3px 0 0 0; font-style:normal; position:relative; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:15px}
 
 .cabinet-menu {float:left; margin:70px 0 0 0; width:375px; font-weight:500; font-size:20px; line-height:30px; text-transform:uppercase; letter-spacing:0.05em}
 .cabinet-menu ul {margin:0; padding:0; list-style:none; border-bottom:1px solid #e2e2e2}
@@ -350,30 +368,22 @@ header {height:80px; background:#f7f7f7}
 .faq-item-content *:last-child {margin-bottom:0}
 
 .main-catalogue {margin:117px 0 0 0}
-.main-catalogue-list {margin:-20px auto 0 auto; width:950px; font-size:0; line-height:0; letter-spacing:-1px; position:relative}
-.main-catalogue-list-auth {width:780px; margin:20px auto 0 auto}
-.main-catalogue-item {display:inline-block; vertical-align:top; width:50%; padding:80px 40px 0 40px}
-.main-catalogue-list-auth .main-catalogue-item {padding:20px 20px 0 20px}
+.main-catalogue-list {margin:20px auto 0 auto; width:780px; font-size:0; line-height:0; letter-spacing:-1px; position:relative}
+.main-catalogue-item {display:inline-block; vertical-align:top; width:50%; padding:20px 20px 0 20px}
 .main-catalogue-item:nth-child(n+5) {position:absolute; left:-99999px; top:-99999px}
 .main-catalogue.open .main-catalogue-item:nth-child(n+5) {position:relative; left:auto; top:auto}
-.main-catalogue-item-inner {border:3px solid #000; background:#fff; padding:40px 30px 30px 30px; position:relative; text-align:center; transition:transform 0.2s, box-shadow 0.2s}
+.main-catalogue-item-inner {border:1px solid #000; background:#fff; padding:20px; position:relative; text-align:left; transition:transform 0.2s, box-shadow 0.2s}
 .main-catalogue-item-inner:hover {transform:translateY(-5px); box-shadow:0 0 5px rgba(0, 0, 0, 0.2)}
-.main-catalogue-list-auth .main-catalogue-item-inner {border:1px solid #000; padding:20px; text-align:left}
-.main-catalogue-item-title {font-weight:bold; font-size:24px; line-height:36px; letter-spacing:0.05em; text-transform:uppercase}
-.main-catalogue-list-auth .main-catalogue-item-title {font-weight:500; font-size:20px; line-height:26px}
-.main-catalogue-item-preview {margin:10px 0 0 0; height:280px; line-height:280px}
-.main-catalogue-list-auth .main-catalogue-item-preview {height:230px; line-height:230px; text-align:center}
-.main-catalogue-item-preview img {display:inline-block; vertical-align:middle; max-height:280px}
-.main-catalogue-list-auth .main-catalogue-item-preview img {max-height:230px}
-.main-catalogue-item-btn {margin:10px 0 0 0}
-.main-catalogue-list-auth .main-catalogue-item-btn {margin:30px 0 0 0}
+.main-catalogue-item-title {font-weight:500; font-size:20px; line-height:26px; letter-spacing:0.05em; text-transform:uppercase}
+.main-catalogue-item-preview {margin:10px 0 0 0; height:230px; line-height:230px; text-align:center}
+.main-catalogue-item-preview img {display:inline-block; vertical-align:middle; max-height:230px}
+.main-catalogue-item-btn {margin:30px 0 0 0; text-align:center}
 .main-catalogue-list-auth .main-catalogue-item-btn::after {content:""; display:block; clear:both}
-.main-catalogue-item-btn span {display:inline-block; vertical-align:top; width:216px; height:62px; background:#ff5d44; color:#000; font-weight:bold; font-size:24px; line-height:62px; letter-spacing:0}
-.main-catalogue-list-auth .main-catalogue-item-btn span {float:left; width:auto; height:auto; background:none; font-weight:900; font-size:16px; line-height:24px; margin:15px 0 0 0}
+.main-catalogue-item-btn span {display:inline-block; vertical-align:top; width:145px; height:54px; background:#ff5d44; color:#fff; font-weight:900; font-size:16px; line-height:54px; letter-spacing:0}
+.main-catalogue-list-auth .main-catalogue-item-btn span {float:left; width:auto; height:auto; background:none; color:#000; font-weight:900; font-size:16px; line-height:24px; margin:15px 0 0 0; text-transform:uppercase}
 .main-catalogue-list-auth .main-catalogue-item-btn .btn {float:right; font-size:16px; line-height:24px; font-weight:500}
 .main-catalogue-all {margin:55px 0 0 0}
-.main-catalogue-all a {display:block; width:870px; margin:0 auto; height:60px; text-decoration:none; color:#000; background:#f4f4f4; font-weight:500; font-size:20px; line-height:60px; letter-spacing:0.05em; text-transform:uppercase; text-align:center; transition:background 0.2s, color 0.2s}
-.main-catalogue-list-auth+.main-catalogue-all a {width:740px}
+.main-catalogue-all a {display:block; width:740px; margin:0 auto; height:60px; text-decoration:none; color:#000; background:#f4f4f4; font-weight:500; font-size:20px; line-height:60px; letter-spacing:0.05em; text-transform:uppercase; text-align:center; transition:background 0.2s, color 0.2s}
 .main-catalogue-all a:hover {color:#fff; background:#000}
 .main-catalogue-all a span:nth-child(2) {display:none}
 .main-catalogue.open .main-catalogue-all a span:nth-child(1) {display:none}
@@ -671,7 +681,7 @@ footer {height:87px; position:relative; margin:-87px 0 0 0}
 .window {position:fixed; left:0; top:0; right:0; bottom:0; overflow:auto; z-index:999; background:#fcfcfc; text-align:center}
 .window::before {content:""; display:inline-block; height:100%; vertical-align:middle}
 .window-loading {position:absolute; left:0; top:0; right:0; bottom:0; background:url(../images/loading.svg) no-repeat center}
-.window-container {display:inline-block; vertical-align:middle; position:relative; text-align:left; background:#fff; margin:0; transition:opacity 0.2s; box-shadow:6px 6px 40px rgba(0, 0, 0, 0.25)}
+.window-container {display:inline-block; vertical-align:middle; position:relative; text-align:left; background:#fff; margin:30px 0 100px 0; transition:opacity 0.2s; box-shadow:6px 6px 40px rgba(0, 0, 0, 0.25)}
 .window-container-preload {opacity:0}
 .window-close {display:block; position:absolute; right:30px; top:18px; width:36px; height:36px; border-radius:50%; background:#000; transition:background 0.2s}
 .window-close:hover {background:#fff}

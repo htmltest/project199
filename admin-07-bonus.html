@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Stay Loyal</title>
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/select2/select2.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="css/styles-supervizor.css" />
+        <link rel="stylesheet" href="css/styles-supervizor-sk.css" />
+        <link rel="stylesheet" href="css/styles-admin.css" />
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=1200" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+
+                <header>
+                    <div class="container">
+
+                        <div class="logos">
+                            <div class="logo-stayloyal"><a href="#"><img src="images/logo-stayloyal-white.svg" alt="" /></a></div>
+                            <div class="logo-sf"><img src="images/logo-sf-white.svg" alt="" /></div>
+                        </div>
+
+                        <div class="header-btns">
+                            <a href="#"><svg class="header-logout"><use xlink:href="images/sprite.svg#header-logout"></use></svg></a>
+                        </div>
+
+                        <div class="header-user">
+                            <a href="#">
+                                <strong><svg><use xlink:href="images/sprite.svg#header-user-edit"></use></svg></strong>
+                                <span>Администратор Елена Сафроненко</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </header>
+
+                <!-- container -->
+                <div class="container">
+
+                    <div class="back-link-auth"><a href="#"><svg><use xlink:href="images/sprite.svg#back-link-auth"></use></svg>На главную</a></div>
+
+                    <div class="supervizor-saloons">
+                        <div class="supervizor-saloons-header">
+                            <h1>Баллы и закупки</h1>
+                            <div class="supervizor-saloons-download"><a href="#" class="btn-border" download><svg><use xlink:href="images/sprite.svg#icon-download"></use></svg>Скачать данные</a></div>
+                            <div class="supervizor-saloons-download supervizor-saloons-download-import"><a href="#" class="btn-border"><svg><use xlink:href="images/sprite.svg#icon-import"></use></svg>Импорт закупок</a></div>
+                            <div class="supervizor-saloons-download supervizor-saloons-download-bonus-add"><a href="#" class="btn-border"><svg><use xlink:href="images/sprite.svg#icon-bonus-add"></use></svg>Зачислить баллы</a></div>
+                            <div class="supervizor-saloons-filter-link"><a href="#" class="btn"><svg><use xlink:href="images/sprite.svg#filter-link"></use></svg><svg><use xlink:href="images/sprite.svg#filter-close"></use></svg></a></div>
+                        </div>
+
+                        <div class="supervizor-saloons-filter">
+                            <form action="#" method="post">
+                                <div class="supervizor-saloons-filter-row">
+                                    <div class="supervizor-saloons-filter-field">
+                                        <div class="form-label">Выбрать квартал</div>
+                                        <div class="supervizor-saloons-filter-q">
+                                            <div class="supervizor-saloons-filter-q-current"><span></span><svg><use xlink:href="images/sprite.svg#report-header-arrow"></use></svg></div>
+                                            <div class="supervizor-saloons-filter-q-list">
+                                                <div class="supervizor-saloons-filter-q-list-row">
+                                                    <div class="supervizor-saloons-filter-q-list-row-y">2018</div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2018q1" /><span>I</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2018q2" /><span>II</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" name="q" value="y2018q3" /><span>III</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2018q4" /><span>IV</span></label></div>
+                                                </div>
+                                                <div class="supervizor-saloons-filter-q-list-row">
+                                                    <div class="supervizor-saloons-filter-q-list-row-y">2019</div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2019q1" /><span>I</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2019q2" /><span>II</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2019q3" /><span>III</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2019q4" /><span>IV</span></label></div>
+                                                </div>
+                                                <div class="supervizor-saloons-filter-q-list-row">
+                                                    <div class="supervizor-saloons-filter-q-list-row-y">2020</div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2020q1" /><span>I</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2020q2" /><span>II</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2020q3" /><span>III</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2020q4" /><span>IV</span></label></div>
+                                                </div>
+                                                <div class="supervizor-saloons-filter-q-list-row">
+                                                    <div class="supervizor-saloons-filter-q-list-row-y">2021</div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2021q1" /><span>I</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2021q2" /><span>II</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2021q3" /><span>III</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2021q4" /><span>IV</span></label></div>
+                                                </div>
+                                                <div class="supervizor-saloons-filter-q-list-row">
+                                                    <div class="supervizor-saloons-filter-q-list-row-y">2022</div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2022q1" checked="checked" /><span>I</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2022q2" /><span>II</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2022q3" /><span>III</span></label></div>
+                                                    <div class="supervizor-saloons-filter-q-list-row-q"><label><input type="radio" name="q" value="y2022q4" /><span>IV</span></label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="supervizor-saloons-filter-field">
+                                        <div class="form-label">ID или название салона</div>
+                                        <div class="form-input"><input type="text" name="saloon" value="" /></div>
+                                    </div>
+                                    <div class="supervizor-saloons-filter-field">
+                                        <div class="form-label">ID или имя супервайзера</div>
+                                        <div class="form-input"><input type="text" name="supervizer" value="" /></div>
+                                    </div>
+                                    <div class="supervizor-saloons-filter-field">
+                                        <div class="form-label">Статус салона</div>
+                                        <div class="supervizor-saloons-filter-status">
+                                            <div class="supervizor-saloons-filter-status-current"><span></span><svg><use xlink:href="images/sprite.svg#report-header-arrow"></use></svg></div>
+                                            <div class="supervizor-saloons-filter-status-list">
+                                                <div class="supervizor-saloons-filter-status-list-row"><label><input type="checkbox" name="status-0" /><span><strong class="bonus-info-level-0"></strong><em>Нет уровня</em></span></label></div>
+                                                <div class="supervizor-saloons-filter-status-list-row"><label><input type="checkbox" name="status-1" /><span><strong class="bonus-info-level-1"></strong><em>Welcome</em></span></label></div>
+                                                <div class="supervizor-saloons-filter-status-list-row"><label><input type="checkbox" name="status-2" /><span><strong class="bonus-info-level-2"></strong><em>Strong</em></span></label></div>
+                                                <div class="supervizor-saloons-filter-status-list-row"><label><input type="checkbox" name="status-3" /><span><strong class="bonus-info-level-3"></strong><em>Kam</em></span></label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="supervizor-saloons-filter-submit">
+                                        <input type="submit" value="найти" class="btn-border" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- analitycs data -->
+                        <div class="analytics-data analytics-data-bonus">
+                            <div class="analytics-data-inner">
+                                <table>
+                                    <thead>
+                                        <tr class="analytics-data-columns">
+                                            <th class="analytics-data-header analytics-data-header-id"></th>
+                                            <th class="analytics-data-header analytics-data-header-name"></th>
+                                            <th class="analytics-data-header analytics-data-header-q-month"></th>
+                                            <th class="analytics-data-header analytics-data-header-q-month"></th>
+                                            <th class="analytics-data-header analytics-data-header-q-month"></th>
+                                            <th class="analytics-data-header analytics-data-header-q-summ"></th>
+                                            <th class="analytics-data-header analytics-data-header-q-summ"></th>
+                                            <th class="analytics-data-header analytics-data-header-q-summ"></th>
+                                            <th class="analytics-data-header analytics-data-header-level-start"></th>
+                                            <th class="analytics-data-header analytics-data-header-volume"></th>
+                                            <th class="analytics-data-header analytics-data-header-supervizer"></th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2" class="analytics-data-header-top"></th>
+                                            <th colspan="6" class="analytics-data-header-top analytics-data-header-top-q">2022 <span>|</span> 1 квартал</th>
+                                            <th colspan="2" class="analytics-data-header-top">Итоги</th>
+                                            <th class="analytics-data-header-top"></th>
+                                        </tr>
+                                        <tr>
+                                            <th class="analytics-data-header analytics-data-header-id">ID</th>
+                                            <th class="analytics-data-header analytics-data-header-name">Название</th>
+                                            <th class="analytics-data-header analytics-data-header-q-month">Янв</th>
+                                            <th class="analytics-data-header analytics-data-header-q-month">фев</th>
+                                            <th class="analytics-data-header analytics-data-header-q-month">март</th>
+                                            <th class="analytics-data-header analytics-data-header-q-summ">За квартал</th>
+                                            <th class="analytics-data-header analytics-data-header-q-summ">по акции</th>
+                                            <th class="analytics-data-header analytics-data-header-q-summ">Итого<br /> объем закупок</th>
+                                            <th class="analytics-data-header analytics-data-header-level-start">Уровень</th>
+                                            <th class="analytics-data-header analytics-data-header-volume">Баллы<br /> за квартал</th>
+                                            <th class="analytics-data-header analytics-data-header-supervizer">Супервизор</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="analytics-data-cell-id">2828</td>
+                                            <td class="analytics-data-cell-name"><a href="windows/saloon-admin.html" class="window-link">Ультра стиль</a></td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-q-summ">59,1</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-level-start"><span class="bonus-info-level-1">welcome</span></td>
+                                            <td class="analytics-data-cell-volume">241,4</td>
+                                            <td class="analytics-data-cell-supervizer">Елена Сафроненко<span>298</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="analytics-data-cell-id">2828</td>
+                                            <td class="analytics-data-cell-name"><a href="windows/saloon-admin.html" class="window-link">Beauty Time</a></td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-q-summ">57,9</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-level-start"><span class="bonus-info-level-0">Нет уровня</span></td>
+                                            <td class="analytics-data-cell-volume">241,4</td>
+                                            <td class="analytics-data-cell-supervizer">Елена Сафроненко<span>298</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="analytics-data-cell-id">2828</td>
+                                            <td class="analytics-data-cell-name"><a href="windows/saloon-admin.html" class="window-link">Салон красоты Май на метро Новочеркасская</a></td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-q-summ">59,1</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-level-start"><span class="bonus-info-level-0">Нет уровня</span></td>
+                                            <td class="analytics-data-cell-volume">241,4</td>
+                                            <td class="analytics-data-cell-supervizer">Елена Сафроненко<span>298</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="analytics-data-cell-id">2828</td>
+                                            <td class="analytics-data-cell-name"><a href="windows/saloon-admin.html" class="window-link">Beauty Time</a></td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-q-summ">57,9</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-level-start"><span class="bonus-info-level-0">Нет уровня</span></td>
+                                            <td class="analytics-data-cell-volume">241,4</td>
+                                            <td class="analytics-data-cell-supervizer">Елена Сафроненко<span>298</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="analytics-data-cell-id">2828</td>
+                                            <td class="analytics-data-cell-name"><a href="windows/saloon-admin.html" class="window-link">Ультра стиль</a></td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-q-summ">59,1</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-level-start"><span class="bonus-info-level-1">welcome</span></td>
+                                            <td class="analytics-data-cell-volume">241,4</td>
+                                            <td class="analytics-data-cell-supervizer">Елена Сафроненко<span>298</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="analytics-data-cell-id">2828</td>
+                                            <td class="analytics-data-cell-name"><a href="windows/saloon-admin.html" class="window-link">Beauty Time</a></td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-q-summ">57,9</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-level-start"><span class="bonus-info-level-1">welcome</span></td>
+                                            <td class="analytics-data-cell-volume">241,4</td>
+                                            <td class="analytics-data-cell-supervizer">Елена Сафроненко<span>298</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="analytics-data-cell-id">2828</td>
+                                            <td class="analytics-data-cell-name"><a href="windows/saloon-admin.html" class="window-link">Ультра стиль</a></td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-month">59,1</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-q-summ">59,1</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-level-start"><span class="bonus-info-level-1">welcome</span></td>
+                                            <td class="analytics-data-cell-volume">241,4</td>
+                                            <td class="analytics-data-cell-supervizer">Елена Сафроненко<span>298</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="analytics-data-cell-id">2828</td>
+                                            <td class="analytics-data-cell-name"><a href="windows/saloon-admin.html" class="window-link">Beauty Time</a></td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-month">57,9</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-q-summ">57,9</td>
+                                            <td class="analytics-data-cell-q-summ">241,4</td>
+                                            <td class="analytics-data-cell-level-start"><span class="bonus-info-level-1">welcome</span></td>
+                                            <td class="analytics-data-cell-volume">241,4</td>
+                                            <td class="analytics-data-cell-supervizer">Елена Сафроненко<span>298</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- analitycs data END -->
+
+                        <div class="pager">
+                            <a href="#" class="pager-prev"><svg><use xlink:href="images/sprite.svg#pager-prev"></use></svg></a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <span>...</span>
+                            <a href="#">12</a>
+                            <a href="#">13</a>
+                            <a href="#">14</a>
+                            <a href="#" class="pager-next"><svg><use xlink:href="images/sprite.svg#pager-next"></use></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="back-link-auth"><a href="#"><svg><use xlink:href="images/sprite.svg#back-link-auth"></use></svg>На главную</a></div>
+
+                </div>
+                <!-- container END -->
+
+            </div>
+        </div>
+        <!-- wrapper END -->
+
+        <footer>
+            <div class="container">
+
+                <div class="footer-container">
+
+                    <div class="footer-copyrights">© 2010—2022 STAY_LOYAL</div>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <a href="#" class="up-link"><svg><use xlink:href="images/sprite.svg#up-link"></use></svg></a>
+
+        <script>
+            var pathTemplate = './';
+        </script>
+        <script src="js/fonts.js"></script>
+
+        <script src="js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/select2/ru.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/tools.js"></script>
+        <script src="js/tools-supervizor.js"></script>
+
+    </body>
+</html>
