@@ -97,6 +97,12 @@ label.error {display:block; margin:2px 0 0 0; font-weight:500; font-size:14px; l
 .form-input input:-webkit-autofill:focus,
 .form-input input:-webkit-autofill:hover {-webkit-text-fill-color:#000; caret-color:#000; -webkit-transition:background-color 999999s ease-in-out 0s; transition:background-color 999999s ease-in-out 0s}
 
+.form-input-clear {display:none; position:absolute; right:5px; top:50%; margin-top:-12px; width:24px; height:24px; border-radius:50%; background:#fff; border:1px solid #000}
+.form-input-clear:hover {background:#000}
+.form-input-clear svg {display:block; width:24px; height:24px; fill:none; stroke:#000; margin:-1px 0 0 -1px; transition:all 0.2s}
+.form-input-clear:hover svg {stroke:#fff}
+.form-input.full .form-input-clear {display:block}
+
 .form-select {position:relative; margin:25px 0}
 .form-label+.form-select {margin-top:5px}
 .form-select select {position:relative; border:1px solid #bfbfbf; font:18px/29px Arial, sans-serif; color:#000; vertical-align:top; margin:0; padding:15px 19px; width:100%; height:61px; box-sizing:border-box; outline:none; border-radius:0; background:#fff; -webkit-appearance:none; transition:border-color 0.2s}

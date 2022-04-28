@@ -17,6 +17,25 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.supervizor-saloons-filter').each(function() {
+        var curForm = $(this).find('form');
+        var isActive = false;
+        if (curForm.find('input[type="checkbox"]:checked').length > 0) {
+            isActive = true;
+        }
+        if (curForm.find('input[type="radio"]:checked').length > 0) {
+            isActive = true;
+        }
+        curForm.find('.form-input input').each(function() {
+            if ($(this).val() != '') {
+                isActive = true;
+            }
+        });
+        if (isActive) {
+            $('html').addClass('filter-open');
+        }
+    });
+
     $('.supervizor-saloons-filter-q-current').click(function() {
         $(this).parent().toggleClass('open');
     });
@@ -53,8 +72,30 @@ $(document).ready(function() {
         updateSupervizorSaloonsFilterStatus();
     });
 
-    $('.analytics-data').mCustomScrollbar({
-        axis: 'x'
+    $('.analytics-data-wrapper').each(function() {
+        $('.analytics-data-wrapper').append('<div class="analytics-data-wrapper-fixed"><div class="analytics-data">' + $('.analytics-data-wrapper > .analytics-data').html() + '</div></div>');
+        $('.analytics-data-wrapper-fixed').find('thead tr').each(function() {
+            $(this).find('.analytics-data-header:gt(1)').remove();
+            $(this).find('.analytics-data-header-top:gt(0)').remove();
+        });
+        $('.analytics-data-wrapper-fixed').find('.analytics-data-header-top').attr('colspan', '2');
+        $('.analytics-data-wrapper-fixed').find('.analytics-data-header-top').html('&nbsp;');
+        $('.analytics-data-wrapper-fixed').find('tbody tr').each(function() {
+            $(this).find('td:gt(1)').remove();
+        });
+    });
+
+    $('.analytics-data-wrapper > .analytics-data').mCustomScrollbar({
+        axis: 'x',
+        callbacks:{
+            whileScrolling: function() {
+                if (this.mcs.left == 0) {
+                    $('.analytics-data-wrapper').removeClass('isFixed');
+                } else {
+                    $('.analytics-data-wrapper').addClass('isFixed');
+                }
+            }
+        }
     });
 
 });

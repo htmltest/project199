@@ -7,6 +7,28 @@ $(document).ready(function() {
         'Ошибка заполнения'
     );
 
+
+	$('body').on('blur', '.form-input input, .form-input textarea', function() {
+		if ($(this).val() != '') {
+			$(this).parent().addClass('full');
+		} else {
+			$(this).parent().removeClass('full');
+		}
+	});
+
+	$('body').on('keyup', '.form-input input, .form-input textarea', function() {
+		if ($(this).val() != '') {
+			$(this).parent().addClass('full');
+		} else {
+			$(this).parent().removeClass('full');
+		}
+	});
+
+	$('body').on('click', '.form-input-clear', function(e) {
+        $(this).parent().find('input').val('').trigger('change').trigger('blur');
+        e.preventDefault();
+	});
+
     $('body').on('input', '.form-input textarea', function() {
         this.style.height = (this.scrollHeight) + 'px';
     });
@@ -211,6 +233,18 @@ $(document).ready(function() {
 
 function initForm(curForm) {
     curForm.find('input.phoneRU').mask('+7 000 000-00-00');
+
+	curForm.find('.form-input input').each(function() {
+		if ($(this).val() != '') {
+			$(this).parent().addClass('full');
+		} else {
+			$(this).parent().removeClass('full');
+		}
+	});
+
+    curForm.find('.form-input input').blur(function(e) {
+        $(this).val($(this).val()).change();
+    });
 
     curForm.find('.form-input textarea').each(function() {
         $(this).css({'height': this.scrollHeight, 'overflow-y': 'hidden'});
