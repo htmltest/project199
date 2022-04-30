@@ -126,6 +126,16 @@ $(window).on('load resize', function() {
         });
     });
 
+    $('.analytics-data-wrapper-fixed').each(function() {
+        var curData = $(this).parents().filter('.analytics-data-wrapper');
+        curData.find('.analytics-data-wrapper-fixed tr').each(function() {
+            var curTR = $(this);
+            var curIndex = curData.find('.analytics-data-wrapper-fixed tr').index(curTR);
+            var curHeight = curData.find('> .analytics-data tr').eq(curIndex).find('> *:first').outerHeight();
+            curTR.find('> *').css({'height': curHeight});
+        });
+    });
+
 });
 
 function updateSupervizorSaloonsFilterQ() {
