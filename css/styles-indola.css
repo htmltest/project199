@@ -200,3 +200,10 @@ form.loading::after {background-image:url(../images/loading-indola.svg) no-repea
 .main-catalogue-item-count-ctrl a {background:#e1e7fb}
 .main-catalogue-item-count-ctrl a svg {fill:#3c476b}
 .main-catalogue-item-count-ctrl a.disabled svg {fill:#bfbfbf}
+
+.window-saloon-prev:hover,
+.window-saloon-next:hover {background:#2b7de2}
+.window-saloon-prev svg {stroke:#2b7de2}
+.window-saloon-next svg {stroke:#2b7de2}
+.window-saloon-prev:hover svg,
+.window-saloon-next:hover svg {stroke:#fff}

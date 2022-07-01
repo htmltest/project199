@@ -144,7 +144,7 @@ label.error {display:block; margin:2px 0 0 0; font-weight:500; font-size:14px; l
 .form-submit {display:inline-block; vertical-align:top}
 .form-reset {display:inline-block; vertical-align:top; margin:0 20px 0 0}
 
-.form-file {margin:25px 0}
+.form-file {margin:25px 0; position:relative; padding:0 0 33px 0}
 .form-label+.form-file {margin-top:5px}
 .form-file::after {content:""; display:block; clear:both}
 .form-file-input {float:left; clear:left; position:relative; overflow:hidden; cursor:pointer}
@@ -153,11 +153,10 @@ label.error {display:block; margin:2px 0 0 0; font-weight:500; font-size:14px; l
 .form-file-input span svg {display:inline-block; vertical-align:middle; margin:-2px 10px 0 0; width:25px; height:25px; fill:#ff5d44; transition:fill 0.2s}
 .form-file-input:hover span svg {fill:#fff}
 .form-file-input input {height:200px; z-index:1; position:absolute; top:0; right:0; opacity:0; cursor:pointer; font-size:200px; background:url(../images/blank.gif); -webkit-appearance:none}
-.form-file-input input.error+span {margin-bottom:31px; border-color:#ff5d44}
-.form-file-input input.error+label.error+span {margin-bottom:31px; border-color:#ff5d44}
-.form-file-input label.error {position:absolute; right:0; bottom:0; white-space:nowrap}
-.form-file-title {float:left; clear:left; margin:12px 0 0 0; font-size:16px; line-height:21px; padding:0 0 0 29px; position:relative}
-.form-file-title:empty {margin:0}
+.form-file-input input.error+span {margin-bottom:52px; border-color:#ff5d44}
+.form-file-input input.error+label.error+span {margin-bottom:52px; border-color:#ff5d44}
+.form-file-input label.error {position:absolute; right:0; bottom:0}
+.form-file-title {position:absolute; left:0; bottom:0; font-size:16px; line-height:21px; padding:0 0 0 29px; white-space:nowrap}
 .form-file-title::before {content:""; display:block; position:absolute; left:0; top:50%; width:25px; height:24px; margin-top:-12px; background:url(../images/form-file-title.svg) no-repeat}
 .form-file-title:empty::before {display:none}
 
@@ -684,7 +683,7 @@ footer {height:87px; position:relative; margin:-87px 0 0 0}
 .window-open,
 .window-open body {overflow:hidden; position:fixed; left:0; top:0; right:0; bottom:0}
 
-.window {position:fixed; left:0; top:0; right:0; bottom:0; overflow:auto; z-index:999; background:#fcfcfc; text-align:center}
+.window {position:fixed; left:0; top:0; right:0; bottom:0; overflow:auto; z-index:999; background:rgba(0, 0, 0, 0.5); text-align:center}
 .window::before {content:""; display:inline-block; height:100%; vertical-align:middle}
 .window-loading {position:absolute; left:0; top:0; right:0; bottom:0; background:url(../images/loading.svg) no-repeat center}
 .window-container {display:inline-block; vertical-align:middle; position:relative; text-align:left; background:#fff; margin:30px 0 100px 0; transition:opacity 0.2s; box-shadow:6px 6px 40px rgba(0, 0, 0, 0.25)}
@@ -700,3 +699,12 @@ footer {height:87px; position:relative; margin:-87px 0 0 0}
 .window-content *:last-child {margin-bottom:0}
 .window-bottom {margin:30px 0 0 0; background:#ebebeb; font-size:0; line-height:0; letter-spacing:-1px; padding:23px 30px; text-align:center}
 .window-bottom a {margin:0 5px; font-size:16px; line-height:24px; font-weight:500}
+
+.window-saloon-prev {display:block; position:fixed; left:50%; top:210px; margin-left:-469px; z-index:999; width:40px; height:40px; background:#fff; transform:translateY(-50%); transition:background-color 0.2s}
+.window-saloon-next {display:block; position:fixed; left:50%; top:210px; margin-left:413px; z-index:999; width:40px; height:40px; background:#fff; transform:translateY(-50%); transition:background-color 0.2s}
+.window-saloon-prev:hover,
+.window-saloon-next:hover {background:#ff5d44}
+.window-saloon-prev svg {display:block; position:absolute; left:50%; top:50%; width:10px; height:16px; margin:-8px 0 0 -6px; fill:none; stroke:#ff5d44; transition:stroke 0.2s}
+.window-saloon-next svg {display:block; position:absolute; left:50%; top:50%; width:10px; height:16px; margin:-8px 0 0 -4px; fill:none; stroke:#ff5d44; transition:stroke 0.2s}
+.window-saloon-prev:hover svg,
+.window-saloon-next:hover svg {stroke:#fff}

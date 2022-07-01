@@ -52,7 +52,9 @@
 
 .import-notice {margin:20px 0 0 0}
 .import-form {margin:40px 0 0 0}
-.import-form form {margin:0; padding:0}
+.import-form::after {content:""; display:block; clear:both}
+.import-form form {margin:0; padding:0; float:left}
+.import-form form.loading::after {background-position:294px 20px}
 .import-form .form-label {margin:0; font-size:8px; line-height:12px}
 .import-form-row {margin:5px 0 0 0}
 .import-form-row::after {content:""; display:block; clear:both}
