@@ -87,9 +87,9 @@ form.loading::after {background-image:url(../images/loading-indola.svg) no-repea
 .main-header-bg {margin-left:-39px}
 .main-header-auth:hover {background:#3c476b}
 .main-header-phone:hover {background:#3c476b}
-.main-header-indola {margin:38px 0 0 0}
-.main-header-indola img {display:block; width:314px}
-.main-header-title {margin:38px 0 0 0; font-size:90px; line-height:99px; font-weight:bold; letter-spacing:00; text-transform:none}
+.main-header-indola {margin:35px 0 0 0}
+.main-header-indola img {display:block; width:115px}
+.main-header-title {margin:30px 0 0 0; font-size:90px; line-height:99px; font-weight:bold; letter-spacing:00; text-transform:none}
 .fonts-loaded .main-header-title {font-family:Montserrat, sans-serif}
 .main-header-title::before {display:none}
 .main-header-subtitle {margin:25px 0 0 0; font-size:24px; line-height:36px; letter-spacing:0; text-transform:none}

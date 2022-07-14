@@ -312,9 +312,9 @@ header {height:80px; background:#f7f7f7}
 .main-header-auth span {display:inline-block; vertical-align:middle; max-width:218px; position:relative; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .main-header-phone {float:right; margin:0; width:230px; height:110px; text-align:center; background:#000; color:#fff; font-size:22px; line-height:110px; font-weight:500; text-decoration:none; transition:background 0.2s}
 .main-header-phone:hover {background:#ff5d44}
-.main-header-sf {margin:45px 0 0 0}
-.main-header-sf img {display:block; width:447px}
-.main-header-title {margin:66px 0 0 0; font-size:80px; line-height:88px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; position:relative}
+.main-header-sf {margin:72px 0 0 0}
+.main-header-sf img {display:block; width:219px}
+.main-header-title {margin:94px 0 0 0; font-size:80px; line-height:88px; font-weight:500; letter-spacing:0.05em; text-transform:uppercase; position:relative}
 .fonts-loaded .main-header-title {font-family:Oswald, sans-serif}
 .main-header-title::before {content:""; display:block; width:593px; height:179px; background:#fff; position:absolute; left:404px; top:-44px}
 .main-header-title span {position:relative}
