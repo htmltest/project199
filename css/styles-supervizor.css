@@ -249,6 +249,8 @@ header {background:#f4f4f4}
 .wrapper .analytics-data-inner td.analytics-data-cell-received {width:65px; padding-right:10px; text-align:center; font-size:13px; line-height:16px}
 .wrapper .analytics-data-inner td.analytics-data-cell-spent {width:65px; padding-right:10px; text-align:center; font-size:13px; line-height:16px}
 .wrapper .analytics-data-inner td.analytics-data-cell-account {width:55px; text-align:center; font-size:13px; line-height:16px; font-weight:bold}
+.wrapper .analytics-data-inner td.analytics-data-cell-account a {color:#000000; text-decoration:none}
+.wrapper .analytics-data-inner td.analytics-data-cell-account a:hover {text-decoration:underline}
 
 .analytics-data-wrapper-fixed {position:absolute; left:0; top:0; background:rgba(255, 255, 255, 0.8)}
 .analytics-data-wrapper-fixed::before {content:""; display:block; position:absolute; right:-8px; top:0; bottom:0; width:8px; background:linear-gradient(90deg, #000 0%, rgba(255, 255, 255, 0) 100%); pointer-events:none; z-index:1; opacity:0; transition:all 0.2s}

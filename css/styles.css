@@ -73,6 +73,10 @@ form.loading::after {content:""; display:block; position:absolute; left:0; top:0
 .message-error .message-title::before {background:url(../images/message-error.svg) no-repeat center}
 .message-error .message-title {color:#ec1d22}
 .message-error .message-text::before {background:#ec1d22}
+.message-warning {background:#FEFDF6; border:1px solid #FFE7CB}
+.message-warning .message-title::before {background:url(../images/message-warning.svg) no-repeat center}
+.message-warning .message-title {color:#E51C21}
+.message-warning .message-text::before {background:#FFE7CB}
 
 .form-label {margin:25px 0 0 0; font-weight:500; font-size:14px; line-height:21px; color:#9e9e9e; text-transform:uppercase; letter-spacing:0.05em}
 .form-input {position:relative; margin:25px 0}

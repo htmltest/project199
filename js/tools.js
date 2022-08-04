@@ -340,6 +340,47 @@ function initForm(curForm) {
                         curForm.removeClass('loading');
                     });
                 }
+            } else if (curForm.hasClass('window-form')) {
+                if (curForm.hasClass('recaptcha-form')) {
+                    curForm.addClass('loading');
+                    grecaptcha.ready(function() {
+                        grecaptcha.execute('6LdHSvgcAAAAAHfkqTliNRLNbN8n4oSa0UJfMCU3', {action: 'submit'}).then(function(token) {
+                            $.ajax({
+                                type: 'POST',
+                                url: curForm.attr('data-captchaurl'),
+                                dataType: 'json',
+                                data: 'recaptcha_response=' + token,
+                                cache: false
+                            }).fail(function(jqXHR, textStatus, errorThrown) {
+                                alert('Сервис временно недоступен, попробуйте позже.' + textStatus);
+                                curForm.removeClass('loading');
+                            }).done(function(data) {
+                                if (data.status) {
+                                    var formData = new FormData(form);
+
+                                    if (curForm.find('[type=file]').length != 0) {
+                                        var file = curForm.find('[type=file]')[0].files[0];
+                                        formData.append('file', file);
+                                    }
+
+                                    windowOpen(curForm.attr('action'), formData);
+                                } else {
+                                    alert('Не пройдена проверка Google reCAPTCHA v3.');
+                                }
+                                curForm.removeClass('loading');
+                            });
+                        });
+                    });
+                } else {
+                    var formData = new FormData(form);
+
+                    if (curForm.find('[type=file]').length != 0) {
+                        var file = curForm.find('[type=file]')[0].files[0];
+                        formData.append('file', file);
+                    }
+
+                    windowOpen(curForm.attr('action'), formData);
+                }
             } else if (curForm.hasClass('recaptcha-form')) {
                 grecaptcha.ready(function() {
                     grecaptcha.execute('6LdHSvgcAAAAAHfkqTliNRLNbN8n4oSa0UJfMCU3', {action: 'submit'}).then(function(token) {

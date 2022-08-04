@@ -68,3 +68,56 @@
 .import-form-row .select2-container--default .select2-selection--single .select2-selection__arrow {height:44px}
 .import-form-submit {float:left; margin:0 0 0 20px}
 .import-form-submit .btn {padding:11.5px 20px; font-size:14px; line-height:21px; font-weight:500}
+
+.window-bonuses {width:416px}
+.window-bonuses .window-content {padding:30px 20px 40px 20px}
+.window-bonuses-info {position:relative}
+.window-bonuses-info::before {content:""; display:block; position:absolute; left:16px; bottom:0; right:16px; height:87px; box-shadow:0px 10px 20px rgba(0, 0, 0, 0.05); opacity:0.9}
+.window-bonuses-info-inner {border:1px solid #E5E5E5; padding:20px; position:relative; background:#FFFFFF}
+.window-bonuses-info-id {margin:-10px -10px 0 0; text-align:right; font-size:12px; line-height:14px; color:#9E9E9E}
+.window-bonuses-info-title {margin:10px 0 0 0; font-size:18px; line-height:22px}
+.window-bonuses-info-address {margin:16px 0 0 0; font-weight:300; font-size:14px; line-height:17px; padding:0 0 0 25px; position:relative}
+.window-bonuses-info-address svg {display:block; width:20px; height:20px; position:absolute; left:0; top:-2px; fill:#828282}
+.window-bonuses-info-phone {margin:13px 0 0 0; font-weight:300; font-size:14px; line-height:17px; padding:0 0 0 25px; position:relative}
+.window-bonuses-info-phone svg {display:block; width:20px; height:20px; position:absolute; left:0; top:-2px; fill:#828282}
+.window-bonuses-info-bonuses {margin:25px 0 0 0; border-top:1px solid #E5E5E5; padding:21px 0 0 25px; position:relative; font-weight:300; font-size:14px; line-height:17px; color:#2D8C24}
+.window-bonuses-info-bonuses.minus {color:#FF5D44}
+.window-bonuses-info-bonuses strong {font-weight:bold; font-size:16px; line-height:19px; margin:0 5px 0 0}
+.window-bonuses-info-bonuses svg {display:block; width:20px; height:20px; position:absolute; left:0; top:20px; fill:#2D8C24}
+.window-bonuses-info-bonuses.minus svg {fill:#FF5D44}
+.window-bonuses-form-title {margin:30px 0 0 0; font-weight:500; font-size:20px; line-height:22px}
+.window-bonuses-type {margin:20px 0 0 -30px}
+.window-bonuses-type::after {content:""; display:block; clear:both}
+.window-bonuses-type .form-radio {float:left; margin:0 0 0 30px}
+.window-bonuses-type .form-radio span {padding:0 0 0 35px}
+.window-bonuses-type .form-radio span::before {width:24px; height:24px; top:0}
+.window-bonuses-type-inc label span::before,
+.window-bonuses-type-inc label:hover span::before {border-color:#2D8C24}
+.window-bonuses-type-dec label span::before,
+.window-bonuses-type-dec label:hover span::before {border-color:#FF5D44}
+.window-bonuses-type-inc input:checked+span::before,
+.window-bonuses-type-inc input:checked+label.error+span::before {border-color:#2D8C24}
+.window-bonuses-type-dec input:checked+span::before,
+.window-bonuses-type-dec input:checked+label.error+span::before {border-color:#FF5D44}
+.window-bonuses-type .form-radio input:checked+span::after,
+.window-bonuses-type .form-radio input:checked+label.error+span::after {width:14px; height:14px; left:5px; top:5px}
+.window-bonuses-type-inc input:checked+span::after,
+.window-bonuses-type-inc input:checked+label.error+span::after {background:#2D8C24}
+.window-bonuses-type-dec input:checked+span::after,
+.window-bonuses-type-dec input:checked+label.error+span::after {background:#FF5D44}
+.window-bonuses-type-inc {color:#2D8C24}
+.window-bonuses-type-dec {color:#FF5D44}
+.window-bonuses .form-input input {height:45px; padding:0 14px; line-height:43px}
+.window-bonuses .form-input textarea {min-height:0; max-height:90px}
+
+.window-warning {width:574px}
+.window-warning-title {font-weight:500; font-size:24px; line-height:26px}
+.window-warning-period {margin:10px 0 0 0; font-size:18px; line-height:27px; font-weight:300; color:#6E7072}
+.window-warning-period span {margin:0 0 0 10px; font-weight:normal; color:#000000}
+.window-warning-text {margin:25px 0 0 0; font-size:18px; line-height:27px}
+.window-warning-list {margin:10px 0 0 0}
+.window-warning-list-item {margin:10px 0 0 0}
+.window-warning-list-item span {display:inline-block; vertical-align:top; padding:5px 20px; font-size:18px; line-height:27px; background:#EBEBEB}
+.window-warning .message {margin:40px 0 25px 0}
+
+.window-results {width:752px}
