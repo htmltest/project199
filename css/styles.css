@@ -385,16 +385,22 @@ header {height:80px; background:#f7f7f7}
 .main-catalogue-item {display:inline-block; vertical-align:top; width:50%; padding:20px 20px 0 20px}
 .main-catalogue-item:nth-child(n+5) {position:absolute; left:-99999px; top:-99999px}
 .main-catalogue.open .main-catalogue-item:nth-child(n+5) {position:relative; left:auto; top:auto}
-.main-catalogue-item-inner {border:1px solid #000; background:#fff; padding:20px; position:relative; text-align:left; transition:transform 0.2s, box-shadow 0.2s}
-.main-catalogue-item-inner:hover {transform:translateY(-5px); box-shadow:0 0 5px rgba(0, 0, 0, 0.2)}
+.main-catalogue-item-inner {display:block; border:1px solid #000; background:#fff; padding:20px; position:relative; text-align:left; transition:transform 0.2s, box-shadow 0.2s; text-decoration:none; color:#000000}
+a.main-catalogue-item-inner:hover {transform:translateY(-5px); box-shadow:0 0 5px rgba(0, 0, 0, 0.2); text-decoration:none}
 .main-catalogue-item-title {font-weight:500; font-size:20px; line-height:26px; letter-spacing:0.05em; text-transform:uppercase}
 .main-catalogue-item-preview {margin:10px 0 0 0; height:230px; line-height:230px; text-align:center}
 .main-catalogue-item-preview img {display:inline-block; vertical-align:middle; max-height:230px}
-.main-catalogue-item-btn {margin:30px 0 0 0; text-align:center}
-.main-catalogue-list-auth .main-catalogue-item-btn::after {content:""; display:block; clear:both}
-.main-catalogue-item-btn span {display:inline-block; vertical-align:top; width:145px; height:54px; background:#ff5d44; color:#fff; font-weight:900; font-size:16px; line-height:54px; letter-spacing:0}
-.main-catalogue-list-auth .main-catalogue-item-btn span {float:left; width:auto; height:auto; background:none; color:#000; font-weight:900; font-size:16px; line-height:24px; margin:15px 0 0 0; text-transform:uppercase}
-.main-catalogue-list-auth .main-catalogue-item-btn .btn {float:right; font-size:16px; line-height:24px; font-weight:500}
+.main-catalogue-item-btn {margin:30px 0 0 0}
+.main-catalogue-item-btn::after {content:""; display:block; clear:both}
+.main-catalogue-list-auth .main-catalogue-item-btn-with-link {margin:-4px 0 0 0}
+.main-catalogue-item-btn span {float:right; padding:0 15px; height:54px; background:#ff5d44; color:#fff; font-weight:900; font-size:16px; line-height:54px; letter-spacing:0}
+.main-catalogue-list-auth .main-catalogue-item-btn span {float:left; text-align:left; padding:0; height:auto; background:none; color:#000; font-weight:900; font-size:16px; line-height:24px; margin:15px 0 0 0; text-transform:uppercase}
+.main-catalogue-list-auth .main-catalogue-item-btn-with-link span {margin:0}
+.main-catalogue-list-auth .main-catalogue-item-btn .btn {float:right; width:64px; height:54px; padding:15px 0 0 0}
+.main-catalogue-list-auth .main-catalogue-item-btn .btn svg {display:block; margin:0 auto; width:24px; height:24px; fill:#FFFFFF}
+.main-catalogue-item-btn .btn-border {float:left; clear:left; width:157px; font-weight:900; font-size:16px; line-height:50px; letter-spacing:0.05em; text-transform:uppercase; height:54px; padding:0}
+.main-catalogue-list-auth .main-catalogue-item-btn .btn-border {margin:10px 0 0 0; width:187px}
+.main-catalogue-list-auth .main-catalogue-item-btn .btn-border+.btn {margin:10px 0 0 0}
 .main-catalogue-all {margin:55px 0 0 0}
 .main-catalogue-all a {display:block; width:740px; margin:0 auto; height:60px; text-decoration:none; color:#000; background:#f4f4f4; font-weight:500; font-size:20px; line-height:60px; letter-spacing:0.05em; text-transform:uppercase; text-align:center; transition:background 0.2s, color 0.2s}
 .main-catalogue-all a:hover {color:#fff; background:#000}
@@ -665,14 +671,15 @@ header {height:80px; background:#f7f7f7}
 .main-catalogue-list-cabinet .main-catalogue-item-btn em {display:block; font-style:normal; text-transform:none; margin:-4px 0 0 0; letter-spacing:0; color:#8c8c8c; font-size:16px; font-weight:100}
 .main-catalogue-item-count {float:right; padding:0 8px 0 0; height:54px; background:#ff5d44; color:#fff; position:relative}
 .main-catalogue-item-count::after {content:""; display:block; clear:both}
+.main-catalogue-item-btn-with-link .main-catalogue-item-count {margin:10px 0 0 0}
 .catalogue-in-cart {display:block; position:absolute; left:-39px; top:15px; width:24px; height:24px; fill:#ff5d44}
 .main-catalogue-item-count-value {float:left; width:35px; text-align:center; font-weight:500; font-size:18px; line-height:54px}
 .main-catalogue-item-count-ctrl {float:left; width:22px; margin:5px 0 0 0; background:#fff}
-.main-catalogue-item-count-ctrl a {display:block; width:22px; height:22px; background:#ff5d44}
-.main-catalogue-item-count-ctrl a+a {margin-top:1px}
-.main-catalogue-item-count-ctrl a.disabled {pointer-events:none; cursor:default}
-.main-catalogue-item-count-ctrl a svg {display:block; width:22px; height:22px; fill:#fff; transition:fill 0.2s}
-.main-catalogue-item-count-ctrl a.disabled svg {fill:#bfbfbf}
+.main-catalogue-item-count-ctrl div {display:block; width:22px; height:22px; background:#ff5d44; cursor:pointer}
+.main-catalogue-item-count-ctrl div+div {margin-top:1px}
+.main-catalogue-item-count-ctrl div.disabled {pointer-events:none; cursor:default}
+.main-catalogue-item-count-ctrl div svg {display:block; width:22px; height:22px; fill:#fff; transition:fill 0.2s}
+.main-catalogue-item-count-ctrl div.disabled svg {fill:#bfbfbf}
 
 .to-cart {position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); z-index:999; width:578px; background:#fff; border:1px solid #e3dddd; box-shadow:6px 6px 40px rgba(185, 185, 185, 0.25); text-align:center; padding:30px}
 .to-cart-title {font-size:16px; line-height:24px; letter-spacing:0.05em; text-transform:uppercase}
@@ -707,6 +714,7 @@ footer {height:87px; position:relative; margin:-87px 0 0 0}
 .window-close:hover svg {stroke:#000}
 
 .window-title {background:#d3d3d3; padding:20px 60px 20px 30px; color:#000; font-weight:500; font-size:30px; line-height:35px}
+.window-title {background:#ff5d44; color:#fff}
 .window-content {padding:30px}
 .window-content *:first-child {margin-top:0}
 .window-content *:last-child {margin-bottom:0}
@@ -721,3 +729,43 @@ footer {height:87px; position:relative; margin:-87px 0 0 0}
 .window-saloon-next svg {display:block; position:absolute; left:50%; top:50%; width:10px; height:16px; margin:-8px 0 0 -4px; fill:none; stroke:#ff5d44; transition:stroke 0.2s}
 .window-saloon-prev:hover svg,
 .window-saloon-next:hover svg {stroke:#fff}
+
+.window-detail {width:822px}
+.window-detail h3 {margin:0 0 20px 0}
+.window-detail-container {margin:20px 0 40px 0}
+.window-detail-container::after {content:""; display:block; clear:both}
+.window-detail-photos {float:left; width:470px; font-size:0; line-height:0; letter-spacing:-1px}
+.window-detail-photos-big {border:1px solid #D1D1D1; height:300px}
+.window-detail-photos-big-list {white-space:nowrap; position:relative; overflow:hidden}
+.window-detail-photos-big-item {display:inline-block; vertical-align:top; width:100%; padding:20px 0; text-align:center; line-height:258px}
+.window-detail-photos-big-item img {display:inline-block; vertical-align:middle; max-width:380px; max-height:258px}
+.window-detail-photos-big-list .slick-slide img {display:inline-block}
+.window-detail-photos-big-list .slick-prev,
+.window-detail-photos-big-list .slick-next {display:block; position:absolute; z-index:2; top:50%; width:24px; height:24px; border:none; border-radius:0; margin:0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:#FFFFFF; transform:translateY(-50%)}
+.window-detail-photos-big-list .slick-prev {left:20px}
+.window-detail-photos-big-list .slick-next {right:20px}
+.window-detail-photos-big-list .slick-prev svg {display:block; width:24px; height:24px; fill:none; stroke:#D1D1D1; transition:stroke 0.2s}
+.window-detail-photos-big-list .slick-next svg {display:block; width:24px; height:24px; fill:none; stroke:#D1D1D1; transition:stroke 0.2s}
+.window-detail-photos-big-list .slick-prev:hover svg,
+.window-detail-photos-big-list .slick-next:hover svg{stroke:#000000}
+.window-detail-photos-preview {margin:0 -5px; text-align:center}
+.window-detail-photos-preview-item {display:inline-block; vertical-align:top; margin:10px 5px 0 5px; width:90px; height:60px; border:1px solid #D1D1D1; transition:border 0.2s; cursor:pointer; padding:5px}
+.window-detail-photos-preview-item:first-child {margin:10px 5px 0 5px}
+.window-detail-photos-preview-item:hover,
+.window-detail-photos-preview-item.active {border-color:#FF5D44}
+.window-detail-photos-preview-item img {display:inline-block; vertical-align:middle; max-width:100%; max-height:100%}
+.window-detail-ctrl {float:right; width:280px; height:300px; background:#F7F7F7; padding:48px 20px 0 20px; text-align:center}
+.window-detail-ctrl form {margin:0; padding:0}
+.window-detail-price {font-weight:900; font-size:42px; line-height:63px; letter-spacing:0.05em}
+.window-detail-price-text {margin:-5px 0 0 0; font-weight:500; font-size:14px; line-height:21px; letter-spacing:0.05em; text-transform:uppercase}
+.window-detail-count {margin:24px 0 0 0; border:1px solid #D1D1D1; background:#FFFFFF; text-align:center; padding:15px 0; font-weight:500; font-size:16px; line-height:24px; letter-spacing:0.05em; position:relative}
+.window-detail-count-dec {display:block; width:24px; height:24px; position:absolute; left:40px; top:50%; margin-top:-12px; background:#FFFFFF}
+.window-detail-count-dec svg {display:block; width:24px; height:24px; fill:#1C1B1F}
+.window-detail-count-dec:hover svg {fill:#000000}
+.window-detail-count-inc {display:block; width:24px; height:24px; position:absolute; right:40px; top:50%; margin-top:-12px; background:#FFFFFF}
+.window-detail-count-inc svg {display:block; width:24px; height:24px; fill:#1C1B1F}
+.window-detail-count-inc:hover svg {fill:#000000}
+.window-detail-submit {margin:20px 0 0 0}
+.window-detail-submit .btn {width:100%; font-size:16px; line-height:24px; padding:15px 0; font-weight:500}
+.window-detail h4 {margin:40px 0 20px 0}
+.window-detail p {margin:8px 0}
