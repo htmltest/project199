@@ -20,9 +20,9 @@
                 </div>
             </div>
             <div class="window-detail-ctrl">
-                <form action="#" method="post">
-                    <div class="window-detail-price">13 600</div>
-                    <div class="window-detail-price-text">БАЛЛОВ</div>
+                <div class="window-detail-price">13 600</div>
+                <div class="window-detail-price-text">БАЛЛОВ</div>
+                <form action="ajax/to-cart.html" method="post">
                     <div class="window-detail-count">
                         <input type="hidden" name="count" value="1" />
                         <div class="window-detail-count-value">1</div>
@@ -31,6 +31,10 @@
                     </div>
                     <div class="window-detail-submit"><button class="btn">В корзину</button></div>
                 </form>
+                <div class="window-detail-in-cart">
+                    <div class="window-detail-in-cart-text">Товар уже добавлен<br /> в корзину!</div>
+                    <div class="window-detail-in-cart-link"><a href="#">перейти В корзину</a></div>
+                </div>
             </div>
         </div>
         <h4>Описание</h4>

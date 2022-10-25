@@ -634,6 +634,38 @@ function windowOpen(linkWindow, dataWindow) {
 
         $(window).trigger('resize');
 
+        $('.window .window-detail-ctrl form').each(function() {
+            var curForm = $(this);
+            var validator = curForm.validate();
+            if (validator) {
+                validator.destroy();
+            }
+            curForm.validate({
+                ignore: '',
+                submitHandler: function(form) {
+                    curForm.addClass('loading');
+                    var formData = new FormData(form);
+
+                    $.ajax({
+                        type: 'POST',
+                        url: curForm.attr('action'),
+                        processData: false,
+                        contentType: false,
+                        dataType: 'html',
+                        data: formData,
+                        cache: false
+                    }).fail(function(jqXHR, textStatus, errorThrown) {
+                        alert('Сервис временно недоступен, попробуйте позже.' + textStatus);
+                        curForm.removeClass('loading');
+                    }).done(function(html) {
+                        $('body').append(html);
+                        $('.window-detail-ctrl').addClass('in-cart');
+                        curForm.removeClass('loading');
+                    });
+                }
+            });
+        });
+
     });
 }
 

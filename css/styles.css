@@ -757,8 +757,9 @@ footer {height:87px; position:relative; margin:-87px 0 0 0}
 .window-detail-photos-preview-item:hover,
 .window-detail-photos-preview-item.active {border-color:#FF5D44}
 .window-detail-photos-preview-item img {display:inline-block; vertical-align:middle; max-width:100%; max-height:100%}
-.window-detail-ctrl {float:right; width:280px; height:300px; background:#F7F7F7; padding:48px 20px 0 20px; text-align:center}
-.window-detail-ctrl form {margin:0; padding:0}
+.window-detail-ctrl {float:right; width:280px; height:300px; border:1px solid #D1D1D1; padding:48px 20px 0 20px; text-align:center}
+.window-detail-ctrl form {margin:24px 0 0 0; padding:0}
+.window-detail-ctrl.in-cart form {display:none}
 .window-detail-price {font-weight:900; font-size:42px; line-height:63px; letter-spacing:0.05em}
 .window-detail-price-text {margin:-5px 0 0 0; font-weight:500; font-size:14px; line-height:21px; letter-spacing:0.05em; text-transform:uppercase}
 .window-detail-count {margin:24px 0 0 0; border:1px solid #D1D1D1; background:#FFFFFF; text-align:center; padding:15px 0; font-weight:500; font-size:16px; line-height:24px; letter-spacing:0.05em; position:relative}
@@ -770,5 +771,12 @@ footer {height:87px; position:relative; margin:-87px 0 0 0}
 .window-detail-count-inc:hover svg {fill:#000000}
 .window-detail-submit {margin:20px 0 0 0}
 .window-detail-submit .btn {width:100%; font-size:16px; line-height:24px; padding:15px 0; font-weight:500}
+.window-detail-in-cart {display:none; margin:31px 0 0 0}
+.window-detail-ctrl.in-cart .window-detail-in-cart {display:block}
+.window-detail-in-cart-text {font-size:14px; line-height:21px; color:#53804F}
+.window-detail-in-cart-link {margin:20px 0 0 0}
+.window-detail-in-cart-link a {display:block; padding:15px 0; text-decoration:none; background:#EDFBEC; color:#53804F; font-weight:500; font-size:16px; line-height:24px; letter-spacing:0.05em; text-transform:uppercase; text-align:center; transition:color 0.2s, background 0.2s}
+.window-detail-in-cart-link a:hover {text-decoration:none; color:#FFFFFF; background:#53804F}
+
 .window-detail h4 {margin:40px 0 20px 0}
 .window-detail p {margin:8px 0}
