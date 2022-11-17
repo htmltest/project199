@@ -780,3 +780,10 @@ footer {height:87px; position:relative; margin:-87px 0 0 0}
 
 .window-detail h4 {margin:40px 0 20px 0}
 .window-detail p {margin:8px 0}
+
+.main-notice {margin:40px 0 0 0; border:1px solid #FFD1CB; background:#FEF6F6; padding:20px 20px 20px 60px; position:relative}
+.main-notice svg {display:block; width:24px; height:24px; position:absolute; left:20px; top:20px; fill:#EC1D22}
+.main-notice-title {color:#EC1D22}
+.main-notice-text {margin:5px 0 0 0; color:#333333}
+.main-notice+.cabinet-menu {margin-top:40px}
+.main-notice+.cabinet-menu+.cabinet-content {margin-top:40px}
